@@ -1,0 +1,91 @@
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$ ps
+    PID TTY          TIME CMD
+    515 pts/2    00:00:00 bash
+    578 pts/2    00:00:00 ps
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$ ps -e
+    PID TTY          TIME CMD
+      1 ?        00:00:00 systemd
+      2 ?        00:00:00 init-systemd(Ub
+      6 ?        00:00:00 init
+     59 ?        00:00:00 systemd-journal
+     86 ?        00:00:00 systemd-udevd
+     98 ?        00:00:00 systemd-resolve
+    100 ?        00:00:00 systemd-timesyn
+    167 ?        00:00:00 cron
+    169 ?        00:00:00 dbus-daemon
+    174 ?        00:00:00 networkd-dispat
+    175 ?        00:00:00 rsyslogd
+    178 ?        00:00:00 systemd-logind
+    201 hvc0     00:00:00 agetty
+    214 tty1     00:00:00 agetty
+    220 ?        00:00:00 apache2
+    221 ?        00:00:00 apache2
+    222 ?        00:00:00 apache2
+    283 ?        00:00:00 unattended-upgr
+    327 ?        00:00:00 SessionLeader
+    330 ?        00:00:00 Relay(335)
+    335 pts/0    00:00:00 bash
+    341 pts/1    00:00:00 login
+    398 ?        00:00:00 systemd
+    399 ?        00:00:00 (sd-pam)
+    404 pts/1    00:00:00 bash
+    514 pts/0    00:00:00 script
+    515 pts/2    00:00:00 bash
+    579 pts/2    00:00:00 ps
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$  ps -au
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         201  0.0  0.0   3240  1148 hvc0     Ss+  21:05   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud console 115200,38400,9600 vt220
+root         214  0.0  0.0   3196  1108 tty1     Ss+  21:05   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+logesh_+     335  0.0  0.1   6200  5104 pts/0    Ss   21:05   0:00 -bash
+root         341  0.0  0.1   7524  4992 pts/1    Ss   21:05   0:00 /bin/login -f
+logesh_+     404  0.0  0.1   6104  4808 pts/1    S+   21:05   0:00 -bash
+logesh_+     514  0.0  0.0   3228  1112 pts/0    R+   21:16   0:00 script module1.log
+logesh_+     515  0.0  0.1   6220  5264 pts/2    Ss   21:16   0:00 bash -i
+logesh_+     580  0.0  0.0   7484  3140 pts/2    R+   21:31   0:00 ps -au
+
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$ ps -aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.3 165800 11248 ?        Ss   21:05   0:00 /sbin/init
+root           2  0.0  0.0   2616  1440 ?        Sl   21:05   0:00 /init
+root           6  0.0  0.0   2616   132 ?        Sl   21:05   0:00 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate
+root          59  0.0  0.3  47736 14760 ?        S<s  21:05   0:00 /lib/systemd/systemd-journald
+root          86  0.0  0.1  21960  5756 ?        Ss   21:05   0:00 /lib/systemd/systemd-udevd
+systemd+      98  0.0  0.3  25664 12728 ?        Ss   21:05   0:00 /lib/systemd/systemd-resolved
+systemd+     100  0.0  0.1  89364  6576 ?        Ssl  21:05   0:00 /lib/systemd/systemd-timesyncd
+root         167  0.0  0.0   4308  2680 ?        Ss   21:05   0:00 /usr/sbin/cron -f -P
+message+     169  0.0  0.1   8528  4592 ?        Ss   21:05   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --sysl
+root         174  0.0  0.4  30108 18632 ?        Ss   21:05   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+syslog       175  0.0  0.1 222404  5256 ?        Ssl  21:05   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         178  0.0  0.1  15332  7180 ?        Ss   21:05   0:00 /lib/systemd/systemd-logind
+root         201  0.0  0.0   3240  1148 hvc0     Ss+  21:05   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud console 115200,38400,9600 vt220
+root         214  0.0  0.0   3196  1108 tty1     Ss+  21:05   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         220  0.0  0.1   6788  4660 ?        Ss   21:05   0:00 /usr/sbin/apache2 -k start
+www-data     221  0.0  0.3 1998188 12720 ?       Sl   21:05   0:00 /usr/sbin/apache2 -k start
+www-data     222  0.0  0.3 1998188 12720 ?       Sl   21:05   0:00 /usr/sbin/apache2 -k start
+root         283  0.0  0.5 107136 21288 ?        Ssl  21:05   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-si
+root         327  0.0  0.0   2616   120 ?        Ss   21:05   0:00 /init
+root         330  0.0  0.0   2616   120 ?        R    21:05   0:00 /init
+logesh_+     335  0.0  0.1   6200  5104 pts/0    Ss   21:05   0:00 -bash
+root         341  0.0  0.1   7524  4992 pts/1    Ss   21:05   0:00 /bin/login -f
+logesh_+     398  0.0  0.2  16968  9292 ?        Ss   21:05   0:00 /lib/systemd/systemd --user
+logesh_+     399  0.0  0.0 168728  3424 ?        S    21:05   0:00 (sd-pam)
+logesh_+     404  0.0  0.1   6104  4808 pts/1    S+   21:05   0:00 -bash
+logesh_+     514  0.0  0.0   3228  1112 pts/0    R+   21:16   0:00 script module1.log
+logesh_+     515  0.0  0.1   6220  5264 pts/2    Ss   21:16   0:00 bash -i
+logesh_+     581  0.0  0.0   7752  3532 pts/2    R+   21:32   0:00 ps -aux
+
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$ ps -au --sort=-%mem
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+logesh_+     515  0.0  0.1   6220  5264 pts/2    Ss   21:16   0:00 bash -i
+logesh_+     335  0.0  0.1   6200  5104 pts/0    Ss   21:05   0:00 -bash
+root         341  0.0  0.1   7524  4992 pts/1    Ss   21:05   0:00 /bin/login -f
+logesh_+     404  0.0  0.1   6104  4808 pts/1    S+   21:05   0:00 -bash
+logesh_+     582  0.0  0.0   7912  3464 pts/2    R+   21:32   0:00 ps -au --sort=-%mem
+root         201  0.0  0.0   3240  1148 hvc0     Ss+  21:05   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud console 115200,38400,9600 vt220
+logesh_+     514  0.0  0.0   3228  1112 pts/0    S+   21:16   0:00 script module1.log
+root         214  0.0  0.0   3196  1108 tty1     Ss+  21:05   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$
