@@ -1,0 +1,17 @@
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2$ mkdir question2
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2$ cd question2
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question2$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question2$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question2$ nano config.txt
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question2$
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question2$ sed 's/localhost/127.0.0.1/g' config.txt>updated_config.txt
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question2$ cat updated_config.txt
+server=127.0.0.1
+database=127.0.0.1
+url=http://127.0.0.1:8080
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question2$ cat config.txt
+server=localhost
+database=localhost
+url=http://localhost:8080
