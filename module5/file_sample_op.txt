@@ -1,0 +1,2 @@
+keyword hello found in file sample.txt
+[32m[K1[m[K[36m[K:[m[K[01;31m[Khello[m[K world
