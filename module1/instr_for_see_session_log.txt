@@ -1,1 +1,0 @@
- run cat module1. log to see to total session log

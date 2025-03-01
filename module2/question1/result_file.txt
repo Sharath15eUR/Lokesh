@@ -1,2 +1,0 @@
-file strictly greater than 1mb
-./file2mb

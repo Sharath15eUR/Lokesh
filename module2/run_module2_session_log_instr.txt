@@ -1,1 +1,0 @@
-run cat module2.log  to see the session log

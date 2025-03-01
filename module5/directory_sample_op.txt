@@ -1,6 +1,0 @@
-Keyword 'how' found in file  test/a.txt
-[32m[K1[m[K[36m[K:[m[Khello [01;31m[Khow[m[K are you
-Keyword 'how' found in file  test/b.txt
-[32m[K1[m[K[36m[K:[m[Khell [01;31m[Khow[m[K are you
-Keyword 'how' found in file  test/test_sub/c.txt
-[32m[K1[m[K[36m[K:[m[Khell [01;31m[Khow[m[K are you
