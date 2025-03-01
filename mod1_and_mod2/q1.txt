@@ -1,0 +1,68 @@
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$ ssh ssh_acc@127.0.0.1
+ssh_acc@127.0.0.1's password:
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Mar  1 17:28:47 UTC 2025
+
+  System load:  0.0                 Processes:             37
+  Usage of /:   0.2% of 1006.85GB   Users logged in:       1
+  Memory usage: 15%                 IPv4 address for eth0: 172.18.89.249
+  Swap usage:   0%
+
+Last login: Sat Mar  1 17:27:34 2025 from 127.0.0.1
+
+ssh_acc@logeshshk:~$ ls
+a.txt  test
+
+ssh_acc@logeshshk:~$
+ssh_acc@logeshshk:~$
+ssh_acc@logeshshk:~$ exit
+logout
+Connection to 127.0.0.1 closed.
+
+
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$ scp -r files/folder1 ssh_acc@127.0.0.1:
+ssh_acc@127.0.0.1's password:
+c.txt                                                                                                             100%    0     0.0KB/s   00:00
+b.txt                                                                                                             100%    0     0.0KB/s   00:00
+a.txt                                                                                                             100%    0     0.0KB/s   00:00
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$
+
+
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$ ssh ssh_acc@127.0.0.1
+ssh_acc@127.0.0.1's password:
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Mar  1 17:30:21 UTC 2025
+
+  System load:  0.0                 Processes:             37
+  Usage of /:   0.2% of 1006.85GB   Users logged in:       1
+  Memory usage: 15%                 IPv4 address for eth0: 172.18.89.249
+  Swap usage:   0%
+
+Last login: Sat Mar  1 17:28:48 2025 from 127.0.0.1
+
+
+ssh_acc@logeshshk:~$ ls
+a.txt  folder1  test
+ssh_acc@logeshshk:~$ ls -l folder1
+total 0
+-rw-r--r-- 1 ssh_acc ssh_acc 0 Mar  1 17:29 a.txt
+-rw-r--r-- 1 ssh_acc ssh_acc 0 Mar  1 17:29 b.txt
+-rw-r--r-- 1 ssh_acc ssh_acc 0 Mar  1 17:29 c.txt
+ssh_acc@logeshshk:~$ exit
+logout
+Connection to 127.0.0.1 closed.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+scp is secured cpy protocol and uitlity used to cpy files and dir between remote and local nodes , it can even used for local transfer but due to
+secrity connection overhead in scp it is slower than cp utility for local transfer , scp work based on ssh .

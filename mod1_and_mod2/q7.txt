@@ -1,0 +1,22 @@
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$ netstat -r
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+default         logeshshk.mshom 0.0.0.0         UG        0 0          0 eth0
+172.18.80.0     0.0.0.0         255.255.240.0   U         0 0          0 eth0
+
+
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$ ip route show
+default via 172.18.80.1 dev eth0 proto kernel
+172.18.80.0/20 dev eth0 proto kernel scope link src 172.18.89.249
+
+
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$ ping 172.18.80.1 -c 2
+PING 172.18.80.1 (172.18.80.1) 56(84) bytes of data.
+
+--- 172.18.80.1 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1162ms
+
+
+The gateway is not reachable here using ping because firewall block icmp replies in current config , allows ingress icmp traffic but block 
+egress icmp traffic   

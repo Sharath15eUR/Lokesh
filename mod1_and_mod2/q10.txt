@@ -1,0 +1,15 @@
+DHCP (dynamic host configuration protocol ) used to automatically allocate ipaddr to the device connected over the given network along with all 
+the confg including dns , subnet, gatewayy etc
+
+step followed in ip assigenment by DHCP = > DORA
+
+D - Dhcp Disovery  => client / end user node send dhcp request packet (broadcast ) in network to reach dhcp server .
+
+O - Dhcp offer => dhcp server on reciving request offer ipaddr from the ip pool along with details like lease time etc.
+
+R - Dhcp request => client choose one of given ip addre and send dhcp request to avail the ip address suggested by dhcp server.
+
+A - Dhcp Ack = > server ack the clients choice and after reciving ack ip addre allocated and config done in end node as per the config details 
+shared .
+
+after lease time over ip addre reallocated to client and this process continues

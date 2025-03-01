@@ -1,0 +1,34 @@
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$ ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.18.89.249  netmask 255.255.240.0  broadcast 172.18.95.255
+        inet6 fe80::215:5dff:fecd:7a3e  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:cd:7a:3e  txqueuelen 1000  (Ethernet)
+        RX packets 183098  bytes 268764207 (268.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 31284  bytes 2453499 (2.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 10283  bytes 1007903 (1.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10283  bytes 1007903 (1.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+inet = ip addr
+netmask = submet mask for current config / interface
+brodcast = broadcast ipddr for the network to which interface belongs to
+inet 6 = ipv6 addr
+flags = represent status in decimal , 4163 correspond to up , brodcast , running , multicast
+
+prefixlen = network bits len in ipv6 in bits
+scopeid = determine the scope of ipv6 addr validity
+
+Rx , tx  packets = contains no of packet and the total len of all recived / transmited packet
+
+Rx,tx errors  = no of error , packets dropped , no of time buffer overflowed , errors related to physical carrier  , no of collision occured in 
+		transmitin and recive of packets
+

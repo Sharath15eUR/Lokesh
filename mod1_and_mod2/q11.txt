@@ -1,0 +1,22 @@
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$ ssh ssh_acc@127.0.0.1
+ssh_acc@127.0.0.1's password:
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Mar  1 19:57:01 UTC 2025
+
+  System load:  0.0                 Processes:             38
+  Usage of /:   0.2% of 1006.85GB   Users logged in:       1
+  Memory usage: 15%                 IPv4 address for eth0: 172.18.89.249
+  Swap usage:   0%
+
+Last login: Sat Mar  1 17:30:22 2025 from 127.0.0.1
+ssh_acc@logeshshk:~$ exit
+logout
+Connection to 127.0.0.1 closed.
+
+
+telnet <ip/domain> <port>

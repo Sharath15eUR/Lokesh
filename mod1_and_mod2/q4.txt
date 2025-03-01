@@ -1,0 +1,42 @@
+=======================ping =======================================
+
+logesh_swami@logeshshk:~$ ping 127.0.0.1
+PING 127.0.0.1 (127.0.0.1) 56(84) bytes of data.
+64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.584 ms
+64 bytes from 127.0.0.1: icmp_seq=2 ttl=64 time=0.065 ms
+^C
+--- 127.0.0.1 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1115ms
+rtt min/avg/max/mdev = 0.065/0.324/0.584/0.259 ms
+
+
+ping get the ip addr or domain name and check weather it was reachable  
+
+ttl = time to live (max node packet can be alive)
+time = response cycle time
+84 bytes is icmp request packet size
+64 byte is icmp respnse packet size
+icmp_seq = sequence number used to track the pckt loss
+
+==========================================arp ==========================
+
+logesh_swami@logeshshk:~$
+logesh_swami@logeshshk:~$ arp
+Address                  HWtype  HWaddress           Flags Mask            Iface
+logeshshk.mshome.net     ether   00:15:5d:3f:b9:cc   C                     eth0
+logesh_swami@logeshshk:~$
+
+
+logesh_swami@logeshshk:~$ arp -a
+logeshshk.mshome.net (172.18.80.1) at 00:15:5d:3f:b9:cc [ether] on eth0
+logesh_swami@logeshshk:~$
+
+logesh_swami@logeshshk:~$ arp -n
+Address                  HWtype  HWaddress           Flags Mask            Iface
+172.18.80.1              ether   00:15:5d:3f:b9:cc   C                     eth0
+
+address = domain of src / src ipaddr
+hwtype = type of interface
+hwaddr = mac address of the interface / device in arp table
+flag_mask = deterine the discovery type C means dynamic discovery other ar M for manual and P for proxy
+iface = interface name of the particular device  in the entry

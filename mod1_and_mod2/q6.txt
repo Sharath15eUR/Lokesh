@@ -1,0 +1,11 @@
+remote desktop sw like Anydesk and TeamView provide the facility for accessing a node from remte location alogn with gui over the internet
+
+it use vairey of protocol like udp , tcp ,DeskRt ,tls etc along with encryption like AES for secure connection and data transfer as packets  
+betwen removte client and session initiator
+
+common flow :-
+
+session id will be generated at the initiator side and by using the session id remote client and connect to the initiators computer and based on
+previlage lever allowed actions can be performed
+
+team view used additional passwd along with the session id for secured connection .

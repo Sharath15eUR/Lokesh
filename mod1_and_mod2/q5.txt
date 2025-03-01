@@ -1,0 +1,13 @@
+if 2 nodes assigned same ipaddr in an network then problem arise when populating the mac table in l2 devices of the network , 
+
+1) arp fail to assign ip->mac properly as multiple node have same ip addr
+	1.1) if both are not communicating simulatneously mac table keep on changing and communication possible
+	1.2) if both communicate at same time then then one node with more connection or existing resolved entries get the ip->mac maping
+	1.3) else both the node become un rechable as both resolve to same arp request and due to collisin packet dropped  , mac table not 
+		populate so no data transfer
+
+2) dhcp server will figure out the issue and assing unique ipaddr (if dhcp used) or manual ressignement need to be done in case of static ip 
+   assigenment 
+
+conclution = > mostly both node become unreachable and arise unexpected behaviour based on the traffic and connection exist at the time of 
+request in the network

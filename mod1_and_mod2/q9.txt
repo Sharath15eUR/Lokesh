@@ -1,0 +1,5 @@
+1)log in to the web interface of the home router
+
+2) select the current lan and see the connected device table or ip talbe of the router
+
+3) list of connected devices are found successfully

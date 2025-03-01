@@ -1,0 +1,62 @@
+==============wireshark part=============================================
+
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$ sudo wireshark
+ ** (wireshark:5527) 18:28:56.503718 [GUI WARNING] -- QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+nl80211 not found.
+ ** (wireshark:5527) 18:29:40.252593 [Capture MESSAGE] -- Capture Start ...
+ ** (wireshark:5527) 18:29:40.321507 [Capture MESSAGE] -- Capture started
+ ** (wireshark:5527) 18:29:40.321554 [Capture MESSAGE] -- File: "/tmp/wireshark_eth0EDZW22.pcapng"
+ ** (wireshark:5527) 18:34:31.054809 [Capture MESSAGE] -- Capture Stop ...
+ ** (wireshark:5527) 18:34:31.134020 [Capture MESSAGE] -- Capture stopped.
+ ** (wireshark:5527) 18:34:31.134103 [Capture WARNING] ./ui/capture.c:722 -- capture_input_closed():
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$
+
+
+===================ping to trigger event================
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2/files$ ping www.google.com
+PING www.google.com (142.250.195.228) 56(84) bytes of data.
+64 bytes from maa03s43-in-f4.1e100.net (142.250.195.228): icmp_seq=1 ttl=116 time=5.00 ms
+64 bytes from maa03s43-in-f4.1e100.net (142.250.195.228): icmp_seq=2 ttl=116 time=2.81 ms
+^C
+--- www.google.com ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1100ms
+rtt min/avg/max/mdev = 2.806/3.900/4.995/1.094 ms
+
+
+===========================tcpdump============================================
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$ ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.18.89.249  netmask 255.255.240.0  broadcast 172.18.95.255
+        inet6 fe80::215:5dff:fecd:7a3e  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:cd:7a:3e  txqueuelen 1000  (Ethernet)
+        RX packets 182627  bytes 268679051 (268.6 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 31116  bytes 2442539 (2.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 10273  bytes 1006973 (1.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10273  bytes 1006973 (1.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$ sudo tcpdump -i lo
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on lo, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+18:47:48.229413 IP localhost > localhost: ICMP echo request, id 8, seq 1, length 64
+18:47:48.229887 IP localhost > localhost: ICMP echo reply, id 8, seq 1, length 64
+18:47:49.233177 IP localhost > localhost: ICMP echo request, id 8, seq 2, length 64
+18:47:49.233194 IP localhost > localhost: ICMP echo reply, id 8, seq 2, length 64
+^C
+4 packets captured
+8 packets received by filter
+0 packets dropped by kernel
+logesh_swami@logeshshk:~/eur_network_assigenment/Lokesh/mod1_and_mod2$
+
+
+wireshark and tcp dump are used to capture the packets and analyze the packet for bettern understang and maipulation of what data transfered 
+over packets and which part has which data like ether frame content , header , ip conntent , connectvity data , payload in case of unsecured 
+connection and encrypted payload in case of secured connection and so on
