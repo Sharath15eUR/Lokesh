@@ -1,0 +1,21 @@
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2$ mkdir question5
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2$ cd question5
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question5$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question5$
+
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question5$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question5$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question5$ netstat -rn
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+0.0.0.0         172.18.80.1     0.0.0.0         UG        0 0          0 eth0
+172.18.80.0     0.0.0.0         255.255.240.0   U         0 0          0 eth0
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question5$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question5$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question5$ ip route
+default via 172.18.80.1 dev eth0 proto kernel
+172.18.80.0/20 dev eth0 proto kernel scope link src 172.18.89.249
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module2/question5$ netstat -rn | awk '$1 == "0.0.0.0" {print $2}' | sort
+172.18.80.1

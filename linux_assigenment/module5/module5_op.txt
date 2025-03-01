@@ -1,0 +1,41 @@
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module5$ ./file_analyzer.sh -d "test" -k "how" >directory_sample_op.txt
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module5$ ./file_analyzer.sh -f "sample.txt" -k "hello" >file_sample_op.txt
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module5$ cat directory_sample_op.txt
+Keyword 'how' found in file  test/a.txt
+1:hello how are you
+Keyword 'how' found in file  test/b.txt
+1:hell how are you
+Keyword 'how' found in file  test/test_sub/c.txt
+1:hell how are you
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module5$ cat file_sample_op.txt
+keyword hello found in file sample.txt
+1:hello world
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module5$ ./file_analyzer.sh -d "test" -k
+Mon Feb  3 08:31:36 IST 2025::Error: Option -k requires an argument
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module5$ ./file_analyzer.sh
+Mon Feb  3 08:31:46 IST 2025::Error:invalid usage of file analyzer ; refer below for valid usage pattern
+Options:
+  --help          Display the help menu.
+  -d <directory>  Directory to search.
+  -k <keyword>    Keyword to search.
+  -f <file>       File to search directly.
+Mon Feb  3 08:31:46 IST 2025::Error:keyword is mandatory to peform search, cannot be null
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module5$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module5$ ./file_analyzer.sh -d
+Mon Feb  3 08:31:56 IST 2025::Error: Option -d requires an argument
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module5$ ./file_analyzer.sh -d "test" -k "{}="
+Mon Feb  3 08:32:11 IST 2025::Error:{}= is invaid keyword, either empty or in appropieate
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module5$ ./file_analyzer.sh -d "test" -g
+Mon Feb  3 08:32:23 IST 2025::Error: Invalid option: -g
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module5$ ./file_analyzer.sh -d "test"
+Mon Feb  3 08:32:31 IST 2025::Error:keyword is mandatory to peform search, cannot be null
+
+

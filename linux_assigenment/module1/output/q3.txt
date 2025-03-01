@@ -1,0 +1,25 @@
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1$ cd dir1
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$ mkdir dir2
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$ ls
+dir2
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$ echo "file for softlink" > dir2/orginal.txt
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$ cat dir2/orginal.txt
+file for softlink
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$ ls -l dir2
+total 4
+-rw-r--r-- 1 logesh_swami logesh_swami 18 Jan 22 21:27 orginal.txt
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$ ln -s dir2/orginal.txt softlink.txt
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$ cat softlink.txt
+file for softlink
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1/dir1$ ls -l |grep "soft"
+lrwxrwxrwx 1 logesh_swami logesh_swami   16 Jan 22 21:29 softlink.txt -> dir2/orginal.txt

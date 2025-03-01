@@ -1,0 +1,2 @@
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/moudle3$ ./backup_manager.sh
+ file usage should be like : ./backup_manager.sh <src_dir> <backup_dir> <extension>

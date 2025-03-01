@@ -1,0 +1,19 @@
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1$ touch q2_file.txt
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1$ ls -l |grep "q2"
+-rw-r--r-- 1 logesh_swami logesh_swami    0 Jan 22 21:19 q2_file.txt
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1$ chmod 766 q2_file.txt
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1$ ls -l |grep "q2"
+-rwxrw-rw- 1 logesh_swami logesh_swami    0 Jan 22 21:19 q2_file.txt
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1$ chmod g+rx q2_file.txt
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1$ ls -l |grep "q2"
+-rwxrwxrw- 1 logesh_swami logesh_swami    0 Jan 22 21:19 q2_file.txt
+
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1$ chmod g-w q2_file.txt
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1$
+logesh_swami@logeshshk:~/eur_linux_assigenments/Lokesh/module1$ ls -l |grep "q2"
+-rwxr-xrw- 1 logesh_swami logesh_swami    0 Jan 22 21:19 q2_file.txt
