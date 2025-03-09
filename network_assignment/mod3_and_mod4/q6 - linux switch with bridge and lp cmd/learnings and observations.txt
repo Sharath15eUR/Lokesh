@@ -1,0 +1,7 @@
+bridge cmd in Linux can be used to create virtual switch interface and used for many applications like docker , vm etc to communicate between different interfaces 
+
+refer the image in this dir for some basic operations performed like creating a virtual bridge , attaching eth0 interface , show apr table with bridge fdb cmd and removing the bridge and un attach eth0 from bridge etc
+
+bridge cmd in Linux can be used to create complex virtual network for managing communication between different application and utilites for restricted access of data between set of application
+
+eg - docker networks create bridge network virtually and attach virtual eth interface of docker img with briddg with port forwarding to communication between set of images / containers.

@@ -1,0 +1,44 @@
+1 ) check the interfaces and modify mac :-
+
+use 
+	ifconfig / ip c
+cmd to check about the current status and detail of the interface
+
+=> use following cmd to modify the mac addr
+
+sudo ip link set eth0 down
+sudo ip link set eth0 address 00:11:22:33:44:55
+sudo ip link set eth0 up
+
+or 
+
+sudo ifconfig eth0 down
+sudo ifconfig eth0 hw ether 00:11:22:33:44:55
+sudo ifconfig eth0 up
+
+
+2) add / set static ip addr to device
+
+sudo ip addr add 192.168.1.1/24 dev eth0
+
+sudo ip route add default via 192.168.1.100 // to set default gateway for all mismatching route not in the routing table entry
+
+
+3) trouble shoot and check connectivity using ping and traceroute
+
+	cmd => ping <ipaddr > ;to check the connectivity
+		traceroute <ip> ; to check the routes the pdu take during the transmition
+
+
+configure the ip addr and mac addr properly
+
+check with ping for reachability of the nodes
+
+check the traceroute to check the path it take during the route
+
+if some thing fails in between do follow
+	=> use traceroute cmd to check where the packet drops or fails and check the config of the device where packet dropped if it is 
+	   with in your access like your firewall , switch , router etc ; check for issues like proper subnetting, nat configuration , acl 	   management of the devices like firewall, route with acl features etc
+
+resolve the issue found using the inspection above and check again for the proper working of the network
+

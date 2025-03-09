@@ -1,0 +1,23 @@
+=> senerio (1) mac table cleared  src node apr not cleared 
+
+
+1) create a  simple network using cisco packet tracer with switch and end nodes
+
+2) configure  static ip addr to the nodes as switch used create a single network and dont use different network ip addr for different end nodes 
+
+3) create an http request for pc 1 with ip 192.168.1.1 to .3 machine 
+
+4) at current state mac addr table of switch was empty so no direct routing and the packet was broadcasted to every other port
+
+5) pc3 with .3 addr check its ip and reply to  the  request and the response sent to pc 1 through switch
+
+6) pc2 with .2 addr get inbound request but dosent send any reply
+
+7) mac addr of pc1 and pc 2 are added to mac address-table of the switch , further route can be directly sent to the intended node pc1 or pc 3 directly
+
+also the ether net frame like src,dest mac addr , ether-type (type of layer 3 protocol) , preamble (sync communication ), frame check seq (fcs ) for error detection , sfd (start frame delimiter)  are also analyzed throughout the pdu transmition process.
+
+
+=> senerio (2) (apr enty of src node cleared)
+
+when arp table of pc 1 was cleared arp request was sent by pc1 to find the dest mac addr and with this process switch learn the mac addr and send data directly to pc 3  

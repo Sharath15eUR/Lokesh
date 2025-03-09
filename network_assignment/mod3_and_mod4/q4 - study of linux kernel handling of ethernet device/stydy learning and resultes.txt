@@ -1,0 +1,56 @@
+1. Overview  Linux Networking Stack
+
+    The Linux networking stack consists of multiple layers:
+    => User Space: Applications (ping, ssh, curl) use system calls (socket(), send(), recv()).
+    => Kernel Space:
+        Socket Layer: Interfaces user applications with transport protocols.
+        Transport Layer: Handles TCP/UDP communication.
+        Network Layer: Processes IP addresses and routing.
+        Link Layer: Manages Ethernet frames and MAC addresses.
+        Device Drivers: Interact with physical or virtual network interfaces.
+
+2. Ethernet Device Registration in the Kernel
+    Network devices are registered with below:
+    alloc_etherdev(size): Allocates an Ethernet device structure. 
+    register_netdev(struct net_device *dev): Registers a network device.
+
+    allocate etherdev return netdev and allocate area in memory and it was registered with register_netdev
+    
+    structures involved:
+        struct net_device: Represents a network interface.
+        struct net_device_ops: Contains function pointers for operations (ndo_open, ndo_stop, ndo_start_xmit).
+        struct napi_struct: Used for efficient packet reception.
+   
+    Example functions in the driver:
+        ndo_open(): Starts the network device (netif_start_queue()).
+        ndo_stop(): Stops the network device (netif_stop_queue()).
+
+3. Packet Transmission Process
+    When an application sends data:
+        User Space: The application calls send().
+
+        kernel Space:
+            Socket Layer: Converts data to transport protocol (TCP/UDP).
+            IP Layer: Adds IP headers.
+            Ethernet Layer: Adds MAC address, creates an Ethernet frame.
+            Driver Layer: Calls ndo_start_xmit() to send the frame to the NIC.
+            NIC Hardware: Sends the frame over the network.
+    
+    Kernel functions used in transmission:
+        dev_queue_xmit(struct sk_buff *skb): Queues a packet for sending.
+        ndo_start_xmit(struct sk_buff *skb, struct net_device *dev): Handles packet transmission.
+        
+        packets queued first and the ndo cmd used to send backet out of the ether interface
+    
+4. Packet Reception Process
+    When a packet is received:
+        NIC Hardware: Receives the packet, raises an interrupt.
+        Driver Layer: Interrupt handler fetches the packet.
+        NAPI (if enabled): Uses polling to move the packet from NIC to kernel buffers.
+        Ethernet Layer: Checks MAC address and CRC (error detection).
+        IP Layer: Decodes and forwards it to the appropriate socket.
+        Transport Layer: Delivers data to the correct process.
+    
+    Kernel functions used in reception:
+        napi_schedule(struct napi_struct *napi): Schedules packet processing. // for advance processing like polling 
+        netif_receive_skb(struct sk_buff *skb): Passes the packet to the kernel stack. // normaly used method
