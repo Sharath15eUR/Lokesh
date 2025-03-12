@@ -1,0 +1,12 @@
+for performing arp spoofing attack config the network as per the givern image
+
+monitor / find out the mac addr of the default gateway by analyzing the packets or seeing the arp enty
+
+in the malicious actor machine her pc1 change the mac addr to that of the default gateway
+
+observation:
+	1) no problem occur if pc1 did not perform any function and remain idle in the network
+	2) if pc 1 perform operation gateway and pc1 have same mac so arp spoofing attack occur and request time out happens
+	3) we can use sniffer to capture the packets and analyze it for further attack
+
+refer the images attached for detailed operation and results

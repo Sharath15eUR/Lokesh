@@ -1,0 +1,13 @@
+Arp ( address resolution protocol ) was used to find the mac address of the destination before sending the packets as at layer 2 (protocol and device) deliver packet through the mac address to reduce the collision domain and fasten the communication will lesser collision between the packets as arp get mac address which was further utilized to create a unicast frame for communication using the mac addr found through the arp reply.
+
+arp request :
+
+	src ip addr and mac addr are set on the frame a dest mac addr is set 00:00:00:00:00:00 and dest ip addr set to the request ip addr
+
+arp reply:
+	
+	all the devices in the current local network or connected to it via the link like switch or bridge also recive the reqest due to broad cast and the intended node will reply an arp 
+	reply with arp response which take deatil from request frame and attach the mac addr of the dest and send a unicast frame from the node with request ip to the src node.
+
+
+current setup ping 192.168.0.102 which was the ip addr for the mobile phone connect in same network through wifi . src ip addr = 192.168.0.104

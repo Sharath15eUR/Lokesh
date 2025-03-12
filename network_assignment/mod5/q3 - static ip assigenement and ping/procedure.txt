@@ -1,0 +1,7 @@
+for config of static ip addr do follow
+	
+	1) login to home routere and reserve a ip addr in dhcp range for the device you want to give static ip
+	2) config the device here mobile phn with static ip addr reserved
+	3) from now every time phn connect to the router mac of phn was compared and reserved ip was allocated from dhcp server 
+
+thus static ip addr confg was successful

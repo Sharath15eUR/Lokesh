@@ -1,0 +1,25 @@
+DHCP follow DORA process to get the ip addr for dhcp server
+
+D => Disccover :
+	
+	in this stage client / end node send the dhcp discover packet broadcast to all the node in the network to locate the dhcp server
+	dhcp server capture the packet and allocated some ip addr available from its ip pool
+
+	src ip addr is empty or blank just padding bits at this stage
+
+O => Offer:
+	
+	in this stage the allocated ip from dhcp server will be sent to the client with dest ip as allocated ip and take mac form the dhcp 	discover and use it as dest mac along with other dhcp related details like server details , its ip , mac etc.
+
+R => Request:
+	
+	in this stage client analyze the dchp offer packet and send broadcast request to the network to get the allocated ip from the dhcp 	server . even now src ip is blank as ip not yet allocated
+
+A => Ack :
+	
+	this is the final stage of dhcp where the dhcp server get the broadcasted dhcp request packet form the client and ack client to 	allow it to use the offered .
+
+form now on till the lease time over the offered ip addr was used by the client , once the lease time over then again DORA process performed to get new ip or router renvew the same ip of active host based on the configuration followed
+
+refer the attached images for detaie view of the DHCP packets in the respective steps of DORA. 
+	

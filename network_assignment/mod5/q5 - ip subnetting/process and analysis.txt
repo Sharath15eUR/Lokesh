@@ -1,0 +1,25 @@
+given ip addr = > 192.168.1.0/24 class c ip addr 
+
+total available host is 256 as 2^8 now to divide it into 4 network divide 256 by 4 so 64 host each  subnet
+
+2^6 = 64 so last 6 bits are left as host addr and remaining 26 bits out of 32 bits are used as network addr so by CIDR /26 is the subnet addr used.
+
+0-63 , 64-127, 128-191, 192-255  are the 4 range of subnet in 192.1681.X network with /26 subnet
+
+The network add of the 4 subnet are 192.16802.0/26 , 192.168.1.64/26 , 192.168.128/26 . 192.168.1.192/26 
+
+the starting addr are reserved as network addr  and the end addr like .63 , .127 ,.191 , .255 was used for broadcast in each subnet
+
+
+so each subnet has 62 ip addr to provide to hosts.
+
+
+config the ip add leaving the network and broadcast addr as per the attached image , check ping with in the network (it works fine)
+
+when you try to reach the device outside the subnet no matching route found and also no inside same subnet so packet dropped , to avoid 
+
+config the default gateway for the subnet as the router interface ip connecting this subnet to router, follow the same for all subnet , the 
+
+default entry with /26 CIDR and .0 , .63 ,.128 and .192 addr was used to forward the packet belong to that subnet throught the respective 
+
+router port 

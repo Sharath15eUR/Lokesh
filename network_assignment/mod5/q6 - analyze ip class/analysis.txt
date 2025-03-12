@@ -1,0 +1,16 @@
+ip addr => 10.1.1.1 , 172.16.5.10 , 192.168.1.5
+
+
+consider we are following classful addressing 
+
+	1) 10.1.1.1 belongs to class A with default subnet /8
+	
+	2) 172.16.5.10 belongs to class B with default subnet /16
+	 
+	3) 192.168.1.5 belongs to class C with default subnet /24
+
+private ip range 10.0.0.0-10.255.255.255 , 172.16.0.0 - 172.31.255.255 . 192.168.0.0 - 192.168.255.255 
+
+class A range 0-127 , class B 128 - 191 , class c 192 - 222 , class D (multicast and broad cast ) 224 -239 , class E 240 - 255 (special)
+
+in pratical defalut subnet was not used and variable subnet with CIDR  used to create subnet and supernet of the respective needs
