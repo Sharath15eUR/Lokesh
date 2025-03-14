@@ -1,0 +1,21 @@
+10.0.0.0/24 network consist of 256 ip addr  and to divide it int0 4 equal sized subnet we can have 256/4 = 64 ip each subnet
+
+2^6 = 64  so last 6 bits are host bits remaining are network bits , by following this 32-6 = 26 network bits 
+
+for 26 network bits network mask is 255.255.255.192
+
+as a result of this 10.0.0.0/24 network was divided into the following 4 subnets
+
+1) 10.0.0.0/26 with .0 network addr and .63 broadcast addr
+
+2)10.0.0.64/26 with .64 network addr and .127 broadcast addr
+
+3) 10.0.0.128/26 with .128 network addr and .191 broadcast addr
+
+4) 10.0.0.192/26 with .192 network addr and .255 broadcast addr
+
+each network has 64-2 = 62 useable hosts.
+
+the network used int this example is same as the networ used for q2 so config and setup related details of the network refer q2 
+
+refer the attached image for layout , config summry and connectivity check

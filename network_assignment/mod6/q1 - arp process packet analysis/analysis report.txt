@@ -1,0 +1,15 @@
+ARP (ADDRESS RESOLUTION PROTOCOL)
+
+arp packet was sent on the network  to identify the mac addr of the dest ip in that network
+
+arp request => the request packet was a broadcast packet sent to all the device in with sender mac,ip and reciver ip filled and reciver mac 		set blank .
+
+arp reply => arp reply was the unicast packet from the intended host who has the requested ip on the network , it takes the ip and mac addr 
+	     from the apr request and send arp reply unicast packet to that host .
+
+arp probe => arp probe was the packe sent on the network with the arp client / node to check weather any other node on the network has the 	     same ip addr  , so the src ip was blank 0.0.0.0 and target mac was also blank with target ip as the ip addr as the ip allocated 	     to the client / sender by dhcp process. the probe msg was as broad cast packet.
+
+	     arp probe was using during connection and ip assigenment phase.
+
+arp announcement => arp announcement was also a broad cast packet sent to all device in the network to announce the source device have the 		    respective ip and mac addr , so all the device can update the arp table with the sent details and the target ip is same 	            as src ip , so that in case of any other node have the same ip after probe process  another node with the same ip will 
+		    also respond to the announce msg and packet collision will happen , else the data will be updated on the arp table of		    other nodes in the network

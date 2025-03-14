@@ -1,0 +1,19 @@
+1) create a network as shown in img 0 and assign the ip to the end host as mentioned
+
+2) config the gateway ip for each subnet on the router4 as mentioned in the img 2 and 3
+
+3) for router5 also assign the ip addr as show by ip int br .
+
+4) by default the connected routes will be created for all the network configured on the router with the interface to which the network ip was assigned.
+
+5) in router 5 configure a static route to 10.0.0.0/26 which is the first subnet consist pc0(1.0.0.0.2) and pc3 ( 10.0.0.3)
+
+with ip route cmd
+
+6) now test the connectivity using ping and traceroute cmd , refer img 5 ,6, 7 , you can see the connectivity fails as packet successfully sent for pc 8 (192.168.0.2) to pc1 through router5 and router4 as static route of 10.0.0.0/26 network configured on router5 , but the reply from  pc1 not reach router 5 as no matching route for 192.168.0.0/24 the root network of pc8 not found in router 4 so the reply packet dropped.
+
+7) configure the static route to the above network mentioned in point 6  as in img 8
+
+8) refer 9 , now ping and traceroute work due to the addition of static routes.
+
+9) other subnets are not reachable as of now as route for those subnet are not  configured ont router 5 and only route for 10.0.0.0/26 configures , so other are not reachable , if need we can configure later.

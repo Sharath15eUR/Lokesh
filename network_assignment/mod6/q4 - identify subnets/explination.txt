@@ -1,0 +1,26 @@
+The given ip addr are 192.168.10.5 , 172.20.15.1 and 8.8.8.8
+
+192.168.10.5 belongs to class C addr with /24 subnet mask
+
+172.0.15.1 belongs to class B with /16 subnet mask
+
+8.8.8.8 belongs to class A with /8 subnet mask
+
+all the above considerations are with respect to classful addressing schema . 
+
+8.8.8.8 is the ip addr of DNS server provided by google.
+
+Nat network address translation , used mostly to convert the ip in private range to public ip with any of the following schema
+
+	1) 1-1 mapping (static)
+	2) pool mapping (dynamic)
+	3) PAT (port address translation many to 1 mapping)
+
+the router or nat compatible device will take the public ip and see the rule configure for performing nat and translate it as per the rule while sending the traffic out and reciving the traffic in 
+
+	sending out => private to public mapping done and src ip become public ip
+
+	reciving in => the reply or ingress packet have dest as public ip and the nat performing device translate it to respective private 
+			ip base on the rule configured (reverse mapping of the sending out step performed)
+
+for more detailed explination refer this q5

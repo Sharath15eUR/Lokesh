@@ -1,0 +1,41 @@
+NAT = > network address translation is the process of translating an ip into another generally used to transform private ip to pubic ip to reach and perform operations on the internet .
+
+broadly there are 3 type of nat => static , dynamic and pat 
+
+1) static nat => map one private ip to 1 public ip (hard to manage)
+
+2) dynamic nat => create a access list with ip pool and map private to public ip map dynamically
+
+3) pat => port address translation , where single public ip with different port number used to send the request , so this is most useful and 
+
+	  efficient to perform  , also pool of ip can be used with pat to ensure high availability and qos .
+
+
+refer the network overview image for the overall setp used for performing nat.
+
+both PAT and Static nat performed 
+
+configure the ip addr to router and end host as in the attached images
+
+create a access list to allow 192.168.1.0/24 netowkr to under go nat , such that ip addr in this network only under go nat other are just 
+
+dropped
+
+now perform pat by overloading the f1/0 interface with the access list
+
+
+also create a static nat for pc1 and add it to nat translation entry
+
+
+=> before performing nat the node in same local network are only reachable , when try to reach outside the network it was not reachable
+
+=> after performing nat as per the nat entry rules packets are undergo nat and end hosts can now reach the public ip with pat and static nat.
+
+all device with 192.168.1.X network undergo PAT and 192.168.1.3 machine only under go static nat as both are configured and static nat is more specific rule or rule with longest match when compared to general rule with access list for pat
+
+
+refer the sniffed packets to see the translation in ip header when sending the ping request to public ip from local end host.
+
+
+refer the attached images and steps performed in it for complete configuration and process outcomes
+
