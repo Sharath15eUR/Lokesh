@@ -1,0 +1,41 @@
+1) TCp ( transmission control protocol )
+
+	the packet captured for tcp here belongs to stream 6 and these packet are the 3 way handshake packets for connection setup
+	
+	1.1) tcp syn => this packet sent from src pc to google.com for connection setup with syn = 0
+	
+	1.2) tcp syn , ack =>  this packet sent from the google.com server to pc with syn = 0 and ack = preve syn+1 ie; 1 in this case
+
+	1.3) tcp ack = > after reciving the syn ,ack packet the client (pc ) send ack with syn+1 ; 1 in this case 
+
+	this process finsishes the connection setup process and till FIN / RST was sent the same connecion used between the client and
+	server. the packet consist some important field like window size ( max no of un ack packet that cant be sent or no of packet sent 	in one cycle , used for flow control) , MSS ( max segment size ie mtu - ip , tcp header) , stream index , seq number , ports src, 	dest and flags linke syn , ack, rst , psh , fin etc.
+
+
+2) UDP (user datagram protocol)
+	this is a connection less protocol and didnot have fault tollerence mechanism , the packet captured here are the datagram 	transfered between client pc and youtube server .
+
+	2.1) pc tp youtube => the port no are set with src 56393 and dest port as 443 (https) , checksum was sent for error detection
+	     packet number was sent , data was also sent but as https used data was encrypted .
+	
+
+	2.2) youtube server to pc = > all the field are similar with reverse in src and dest port and change in data
+
+	upd is a protocol with less overhead and minimal set of parameter to lookup  for , used primiraly for faster transmition in area 
+	where reliability no required like streaming video where missing of 1 or 2 frame does not create issue.
+
+
+3) DNS (domain name system)
+	
+	dns was used for ip lookup form url and reverse lookup also , it used udp protocol for communication with dest port 53.there are 2 	main packet in dns they are dns query and dns responsed , each query was attached with a Transactoion ID which used during sending 
+	response to map the response to the respective query , this is useful when multiple request are sent to dns server.
+	
+	it consist of all the parameters included in the udp packet
+
+	in Dns packet following present queries , flags set to values like standard queries / response along with their respective hex 
+	value , data like Answer RR (resource record) , Authority RR etc which set to 1 mean the response is from the respective kind of 
+	server. and queres section contain the requested url , typel like A for ipv4 and AAAA for ipv6 , Mx form mail server NS for name 
+	server etc . finally the response contain all the data in query along with the resovled detail like ipv4 addr etc.
+
+	refer the images attached (labled with dns) for more detaild results , the packet capture are A and AAAA lookup for google.com
+

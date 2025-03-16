@@ -1,0 +1,57 @@
+iPerf is a network testing tool used to measure bandwidth and performance. It operates in a client-server model, supporting TCP, UDP, multicast, and reverse testing. It measures throughput, latency, jitter, and packet loss.
+
+1. Basic Client-Server TCP Test
+Command for Server: iperf3 -s
+Explanation: The server listens for incoming connections and measures the performance.
+
+Command for Client: iperf3 -c <server_ip>
+Explanation: The client connects to the server and sends TCP traffic to measure throughput.
+
+2. UDP Test
+Command for Server: iperf3 -s
+Explanation: The server listens for UDP traffic.
+
+Command for Client: iperf3 -c <server_ip> -u -b 100M
+Explanation: The client sends UDP traffic to the server with a bandwidth of 100 Mbps. -u specifies UDP mode, and -b 100M sets the bandwidth.
+
+3. Test with Specific Port
+Command for Server: iperf3 -s -p 12345
+Explanation: The server listens on port 12345.
+
+Command for Client: iperf3 -c <server_ip> -p 12345
+Explanation: The client connects to the server on port 12345.
+
+4. Reverse Mode Test
+Command for Server: iperf3 -s
+Explanation: The server listens for incoming connections.
+
+Command for Client: iperf3 -c <server_ip> -R
+Explanation: The -R flag reverses the data flow, meaning the server sends data to the client instead of the client sending data to the server. Useful for testing server upload capacity.
+
+5. Bidirectional (Duplex) Test
+Command for Server: iperf3 -s
+Explanation: The server listens for connections.
+
+Command for Client: iperf3 -c <server_ip> -d
+Explanation: The -d flag enables bidirectional testing, where data flows in both directions simultaneously. Measures throughput in both directions (client-to-server and server-to-client).
+
+6. Multicast Test
+Command for Server: iperf3 -s -B 239.0.0.1
+Explanation: The server binds to the multicast address 239.0.0.1 and listens for multicast traffic.
+
+Command for Client: iperf3 -c 239.0.0.1
+Explanation: The client connects to the multicast group 239.0.0.1 to receive traffic.
+
+7. Customizing Packet Size and Other Options
+Command for Server: iperf3 -s
+Explanation: The server listens for incoming connections.
+
+Command for Client: iperf3 -c <server_ip> -l 1500 -w 128K
+Explanation: The -l 1500 option sets the packet size to 1500 bytes, and -w 128K sets the TCP window size to 128 KB.
+
+8. Test with Specific Duration and Reporting Interval
+Command for Server: iperf3 -s
+Explanation: The server listens for incoming connections.
+
+Command for Client: iperf3 -c <server_ip> -t 30 -i 5
+Explanation: The -t 30 option runs the test for 30 seconds, and -i 5 reports results every 5 seconds.

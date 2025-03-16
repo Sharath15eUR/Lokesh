@@ -1,0 +1,24 @@
+1) Test-Connection 
+
+	this is  a sophisticated utility to test connectivity with the destination specified using the system name , it can perform ping, 	traceroute etc , produce the result in tabular form with host name resolving .
+	
+	refer attached image for op with 2 ping each target .
+
+2) dnslookup
+
+	dns lookup utility is used to perform various operation related to dns , like resolving the address from the url , reverse lookup,
+	NS lookup , MS looup etc
+
+	type = A  ; ipv4 address
+	type = AAAA ; ipv6 addr
+	type = NS ; name server lookup
+	typed = MS ; mail server lookup and so on
+
+	this utility consist of followng options  chaging the lookup server , changing type , no of retries , set default domain name , root
+	server name , timeoout etc .
+
+
+	refer the attached images for higlevel usage of dns lookup .
+
+	
+	

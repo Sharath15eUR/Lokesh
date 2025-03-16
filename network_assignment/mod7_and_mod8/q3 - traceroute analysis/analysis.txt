@@ -1,0 +1,8 @@
+the first hop is the extension router connected to jio fiber connection , hop 2 was the jio fiber gateway,
+hop 3-8 are the internal routing done by the isp jiofiber
+
+hop 11 was the gateway owned by google.com and routed to the server or router hop 12 then internal routing done and sent to other server / router owned by google the finally reach the dest
+
+each hop has sent with 3 request ie 3 probe each hop and rtt (round trip time ) was clauclated.
+
+also refer the image for list of available option like max hops , ipv4,or ipv6 , start probe with ttl , no for prob each hop etc

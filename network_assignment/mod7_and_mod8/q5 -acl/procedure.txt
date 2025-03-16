@@ -1,0 +1,17 @@
+ACL (access control list ) is used to restrict the traffic / packet flow to make it follow certain ruled for security purpose
+
+there are 2 type of acl (standard and extended 1-100 standard )
+
+standard acl placed very close to destination , extended acl placed very close to source.
+
+extended acl have featuren to allow or permit based on src, dest ip , type of protocol and the src , dest port
+
+standard acl will perform solely based on ip alone
+
+refer the attached image to config the netowkr and create and apply standard and extended acl and also for the results of data flow along with the pdu details due to config of acl in routers.
+
+router1 near to src have extend acl blokc http traffic from 192.168.0.2 to 192.168.3.3 but allow http to 192.168.3.2
+
+router 0 near server have standard acl which block 192.168.0.3 and 192.168.10./24 network and allow remaining all.
+
+refer the images for detailed config and results .

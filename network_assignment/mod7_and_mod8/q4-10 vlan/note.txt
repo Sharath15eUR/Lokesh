@@ -1,0 +1,14 @@
+refer the attached images and its description for overall config and workflow
+
+image description and the instr followed in image are self explinatory for the overall workflow need to be followed for the given task
+
+
+vlan => virtual lan was used to separate the collision domain virtually by partitioning the ports int different vlans, it separate need for dedicated hardware to seperte different subnets.
+
+in the attachec image 2 approaches followed  ros(router on a stick) and multilayer swtich( swith with routing capability)
+
+trunk port are used to use single vlan port to share multiple vlan packet with vlan tagging
+
+int trunk port dot1q protocol was followed .
+
+refer the images for intial setup , arise of issue mention in qn and resolving it by setting up necessary config and final working network layout with config for ros and multilayer switch methods
