@@ -1,0 +1,9 @@
+A Wi-Fi access point (AP) is a networking device that enables wireless devices to connect to a wired network using wifi. It serves as a bridge between the wireless devices (like smartphones, laptops, or tablets) and the wired network infrastructure, often connected to a router or switch. 
+
+The AP broadcasts a wireless signal within a specific range, allowing devices to detect and connect to it. It operates by transmitting and receiving radio waves, typically over the 2.4 GHz and 5 GHz frequency bands. 
+
+The access point ensures that wireless devices can communicate with the wired network and access resources like the internet, shared files, or printers. Additionally, it manages network traffic between devices to maintain a stable and secure connection, often providing features like encryption (WPA, WPA2, WPA3) for security, along with options for bandwidth management and quality of service (QoS) to prioritize certain types of data like voice. 
+
+ an access point is extend the reach of a network wirelessly, enabling connectivity and mobility within its coverage area.
+
+based on type of setup AP can be in BSS or ESS

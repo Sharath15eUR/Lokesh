@@ -1,0 +1,13 @@
+=> Bridge
+ bridge is used to connect two separate networks, typically over a distance, by linking two access points together. It creates a seamless connection between the networks, often used to connect two buildings or different parts of a large network.
+
+bridge transmits data directly between the networks without repeating the signal. It doesn't amplify or retransmit the data; it simply passes it along.
+
+Example: Connecting two buildings with a wired network using wireless bridges.
+
+=> Repeater
+ repeater is used to extend the range of a network by receiving and retransmitting a signal from an access point (AP). It helps to improve coverage in areas where the signal strength is weak.
+
+ repeater receives the signal from the original AP, amplifies it, and then retransmits it to extend the coverage area. It boost the signal, allowing devices further away from the original AP to connect.
+
+Example: Extending Wi-Fi coverage to a room or area where the original AP’s signal is weak.

@@ -1,0 +1,20 @@
+=> Infrastructure Mode
+
+most common setup, devices like laptops and smartphones connect to a central access point , which manages network traffic and provides internet or local network access. This topology is ideal for homes, offices, and public spaces where multiple devices need reliable connectivity.
+
+=>Ad-Hoc Mode
+
+on the other hand, creates a peer-to-peer network without the need for a central AP, allowing devices to communicate directly with each other. This is useful for temporary or small-scale networks, such as file sharing or wireless gaming in environments where a router is not available.
+
+=>Repeater Mode
+
+is used to extend the range of an existing Wi-Fi network by receiving and retransmitting the signal, which is helpful for covering areas with weak or no Wi-Fi signal, such as large homes or outdoor spaces.
+
+=> Bridge Mode
+
+ connects two separate networks, typically by linking a wired network to a wireless one, enabling Ethernet devices to connect to a Wi-Fi network. This is often used in scenarios like connecting wired devices in distant rooms or extending the network to buildings that aren't directly within reach of the router.
+
+=>Mesh Networks
+
+consist of multiple access points that work together to provide seamless, extended coverage across larger areas. These networks are self-healing if one AP fails traffic can be rerouted through other APs, making them ideal for large homes, multi-floor buildings, or outdoor environments where uninterrupted Wi-Fi coverage is necessary. (ESS)
+

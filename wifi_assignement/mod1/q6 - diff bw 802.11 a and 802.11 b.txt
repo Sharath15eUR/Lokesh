@@ -1,0 +1,69 @@
+Release Year:
+
+	Both 802.11a and 802.11b were released in 1999.
+
+Frequency Band:
+
+	802.11a: Operates on the 5 GHz band.
+
+	802.11b: Operates on the 2.4 GHz band.
+
+Max Data Rate:
+
+	802.11a: Supports up to 54 Mbps.
+
+	802.11b: Supports up to 11 Mbps.
+
+Channel Bandwidth:
+
+	802.11a: Has a 20 MHz channel bandwidth.
+
+	802.11b: Has a 22 MHz channel bandwidth.
+
+Modulation:
+
+	802.11a: Uses OFDM (Orthogonal Frequency Division Multiplexing).
+
+	802.11b: Uses DSSS (Direct Sequence Spread Spectrum).
+
+Range:
+
+	802.11a: Has a shorter range due to higher frequency (5 GHz).
+
+	802.11b: Has a longer range due to lower frequency (2.4 GHz).
+
+Interference:
+
+	802.11a: Experiences less interference, as fewer devices use the 5 GHz band.
+
+	802.11b: Faces more interference due to congestion in the 2.4 GHz band.
+
+Wall Penetration:
+
+	802.11a: Has poorer wall penetration due to higher frequency.
+
+	802.11b: Has better wall penetration due to lower frequency.
+
+Power Consumption:
+
+	802.11a: Has higher power consumption due to complex modulation.
+
+	802.11b: Has lower power consumption, making it more energy-efficient.
+
+Network Type:
+
+	802.11a: Mainly used in enterprise and business environments.
+
+	802.11b: Widely used for residential and consumer devices.
+
+Adoption:
+
+	802.11a: Less popular due to higher cost and shorter range.
+
+	802.11b: Widely adopted for early Wi-Fi networks.
+
+Use Cases:
+
+	802.11a: Used in business, high-speed applications.
+
+	802.11b: Used in home networks, IoT devices, and for low-speed internet

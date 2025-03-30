@@ -1,0 +1,36 @@
+A backhaul is the connection that bridges a local network  to the internet. 
+
+
+=> fiber optic
+
+Capable of delivering speeds ranging from 1 Gbps to over 10 Gbps, fiber offers minimal latency  and high reliability.
+It is widely used in cities, large enterprises, and academic institutions .
+
+
+=> DSL (Digital Subscriber Line) 
+
+This  operates over traditional copper telephone lines, offering speeds between 10 and 100 Mbps, it provides moderate reliability, its latency is higher ,older model
+
+
+=> Ethernet 
+
+Preferred for enterprise Wi-Fi networks, office infrastructures, and campus access point connections. 
+It provides high reliability and low latency with speeds often exceeding 1 Gbps.
+
+=> Microwave 
+
+Supports internet connectivity in remote regions, as well as ISP backbone networks and cellular tower connections.
+It can provide multi-Gbps speeds with latencies around 1–10 ms, making it a viable alternative to fiber in challenging deployment scenarios.
+
+=> Satellite
+
+Often used in remote locations where terrestrial networks are unavailable, satellite-based backhaul can offer speeds up to 1 Gbps. 
+However, it suffers from high latency due to the long-distance signal travel.
+
+
+Power Line Communication (PLC)
+
+Utilizes existing electrical wiring to transmit data, making it a cost-effective solution in certain deployments 
+It is often used in smart grid applications and home networking scenarios where traditional cabling is impractical.
+
+my home network use air fiber connection which use microwave  to connect to  cellphone tower , but reciver connected to gateway router via ethernet so the backhaul used is ethernet backhaul.

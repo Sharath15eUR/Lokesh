@@ -1,0 +1,41 @@
+wifi operates at the bottom 2 layers of osi model ( datalink and physical layers)
+
+=> 1. Data Link Layer (Layer 2)
+
+Wi-Fi operates primarily in the Data Link Layer, which is responsible for reliable communication between devices on the same local network (in this case, over wireless media). This layer is divided into two sub-layers: the MAC (Medium Access Control) layer and the LLC (Logical Link Control) layer
+
+=> MAC Sub layer:
+
+The MAC layer is responsible for managing access to the shared wireless medium . It controls how devices communicate with each other, ensuring that data is transmitted efficiently and without collisions
+
+Addressing: Every device in a Wi-Fi network is assigned a unique MAC address usedd to identify devices and facilitate the correct delivery of frames 
+
+Error detection and correction: The MAC layer uses checksums (such as CRC ) to detect errors in the transmitted frames and can request retransmission if an error is found
+
+CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance): This is a protocol used to avoid data collisions when multiple devices are trying to communicate over the same wireless channel
+
+Carrier Sense: Before transmitting data, the device checks if the channel is free (i.e  no other device is transmitting)
+
+Collision Avoidance: If the channel is free the device waits for a short period (random backoff) to further reduce the chance of a collision, If the channel is busy, it retries after waiting for the channel to become idle
+
+=> LLC (Logical Link Control) Sub-layer:
+
+The LLC layer handles higher-level functionalities like error control and flow control, framing etc
+
+
+
+=> 2. Physical Layer (Layer 1)
+
+The Physical Layer in the OSI model is responsible for the actual transmission and reception of raw bitstreams over the physical medium radio waves, this layer deals with all aspects of signal transmission, including the hardware, frequencies, and encoding schemes.
+
+Radio Frequency (RF) Signals: Wi-Fi uses radio frequencies (RF) to transmit data. Different Wi-Fi standards operate on different frequency bands:
+
+2.4 GHz Band: Older Wi-Fi standards like 802.11b/g/n operate on this band.
+
+5 GHz Band:802.11a and  Newer standards like 802.11n/ac/ax use this higher-frequency band, offering more channels and less interference.
+
+6 GHz Band:  a new frequency band of 6 GHz is introduced, providing even more channels and faster data rates.
+
+Modulation and Encoding: This layer also defines how data is encoded into radio signals, determining the modulation techniques used to send information over the air like DSS , OFDM , OFDMA , MIMO, QAM  etc
+
+Channel Access: The Physical layer defines how devices access the wireless channel, including channel bonding techniques to increase data throughput. For instance, 802.11n/ac/ax can combine multiple 20 MHz channels into a larger channel (40 MHz, 80 MHz, or even 160 MHz) to achieve higher throughput.

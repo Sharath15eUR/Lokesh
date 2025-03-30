@@ -1,0 +1,7 @@
+The IEEE (Institute of Electrical and Electronics Engineers) and WFA (wifi Alliance) are two prominent organizations in the field of technology, particularly in wireless communication. 
+
+IEEE: The IEEE is a global professional association that focuses on advancing technology in areas like electrical engineering, electronics, and computer science. It is responsible for developing and maintaining standards related to various technologies, including the IEEE 802 standards, which govern wireless communication protocols such as wifi (802.11), Ethernet (802.3), and Bluetooth (802.15)
+
+WFA: The wifi Alliance, on the other hand, is a global non-profit organization that specifically focuses on promoting and certifying wifi technology. It works to ensure interoperability between devices using wifi and develops certifications like WPA2 and WPA3 for security. 
+
+While IEEE defines the technical standards (like 802.11), the WFA ensures that devices confrm to those standards and can work seamlessly together.

@@ -1,0 +1,15 @@
+=> BSS
+
+In Wifi networking, Basic Service Set (BSS) and Extended Service Set (ESS) are  used to describe different configurations of wireless networks that determine how devices connect and communicate with each other.  BSS refers to a single Wi-Fi network setup that consists of one access point (AP) and a group of devices, known as stations connect ot it
+
+ In an infrastructure BSS, the AP acts as the central hub, facilitating communication between devices and providing access to the broader network or the internet. In  Independent BSS (IBSS), where devices communicate directly with each other without the need for an AP, in    ad-hoc networks.
+
+ Each BSS has its own coverage area, with devices communicating directly with the AP within that region. The SSID (Service Set Identifier) is used to identify the BSS, allowing devices to connect to the correct network.
+
+=> ESS
+
+ESS expands on  a BSS by connecting multiple BSSs together to form a larger, unified wireless network. This setup is used to provide wireless coverage over a much broader area, such as a large building or campus.
+
+ In an ESS, multiple APs work together, each managing its own BSS, but all share the same SSID, password, and security settings. The AP in an ESS are interconnected, often via a wired or wireless backhaul, to allow devices to roam seamlessly between different APs without losing connection
+
+This roaming feature useful in large environments, as devices can maintain continuous network access while moving across the coverage area. an ESS provides a larger, more robust wireless network that is managed as a single network entity, despite being composed of multiple AP and BSS.

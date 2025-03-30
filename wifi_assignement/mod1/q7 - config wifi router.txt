@@ -1,0 +1,11 @@
+the steps to config wifi router for 2.5GHz and 5GHz are same
+
+=> login to the portal / dashboard usually at 192.168.0.1 or 192.168.1.1
+
+=> this expose the config page hosted by router internal webserver
+
+=> select the appropriate band  , its mode like AP , bridge or router
+
+=> select the security options and config dhcp pool
+
+=> save the config and exit
