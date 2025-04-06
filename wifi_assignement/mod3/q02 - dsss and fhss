@@ -1,0 +1,11 @@
+DSSS (Direct Sequence Spread Spectrum) and FHSS (Frequency Hopping Spread Spectrum) are both techniques used to spread a signal over a broader frequency range to minimize interference and improve security in wireless communication systems.
+
+ DSSS works by multiplying the data signal with a pseudo-random noise (PN) sequence, which increases the bandwidth of the signal. This spreading allows the signal to be more resistant to interference, as it appears as noise across the wider frequency range. DSSS is commonly used in systems like used in 802.11b and earlier wifi.
+
+ FHSS spreads the signal by rapidly changing the carrier frequency across a sequence of predetermined channels. The frequency hopping occurs at regular intervals, making it difficult for an unintended receiver to intercept or interfere with the communication. FHSS is often used in systems like Bluetooth , wifi where multiple devices operate in a crowded frequency space, and it helps avoid interference from other wireless devices operating in the same frequency band.
+
+Both techniques are designed to improve reliability, reduce the effects of interference, and provide more secure communication in environments with potential signal disruption , DSSS spreads the signal over a wide bandwidth, while FHSS hops the carrier frequency across different channels.
+
+FHSS use a sequence and mapping table to get the frequecy to hop at the current intreval and transmit the data over that particular hop of frequency . 
+
+DSSS spread single signal so lesser throughput but FHSS may multiplex different signal on different hop so better utilization of the available medium and bandwidth.

@@ -1,0 +1,46 @@
+Wi-Fi operates using different frequency bands these are follows
+
+=>  2.4 GHz Band
+Frequency Range: 2.4 GHz to 2.4835 GHz.
+
+Channels: This band is divided into 14 channels, each with a 20 MHz width, though not all channels are available worldwide .
+
+Channel Overlap: Channels in the 2.4 GHz band overlap with one another. To avoid interference, non-overlapping channels are typically channels 1, 6, and 11 in the U.S. These three channels are spaced far enough apart that they don't interfere with each other.
+
+Challenges: The 2.4 GHz band is crowded because it's used by many other devices (like Bluetooth, microwave ovens, and cordless phones), which can lead to interference and congestion. It also has a lower data rate compared to the 5 GHz band.
+
+=>  5 GHz Band
+Frequency Range: 5.15 GHz to 5.825 GHz (can vary slightly by country).
+
+Channels: The 5 GHz band has more channels available compared to the 2.4 GHz band, and the channels are typically 20 MHz wide, but can be bonded to 40 MHz, 80 MHz, or even 160 MHz for higher data rates.
+
+Channels 36–48 (5.150–5.250 GHz): Typically used for indoor Wi-Fi (lower power limits).
+
+Channels 52–64 (5.250–5.350 GHz): Also for indoor use.
+
+Channels 100–140 (5.500–5.700 GHz): These are also used for Wi-Fi, but power limits vary.
+
+Channels 149–165 (5.725–5.825 GHz): These are often used in the U.S. for Wi-Fi but might be restricted in other regions.
+
+Non-overlapping Channels: Unlike the 2.4 GHz band, the 5 GHz band offers many non-overlapping channels, making it less prone to interference. This allows for higher speeds and better performance.
+
+Challenges: The 5 GHz band has a shorter range than 2.4 GHz and is more susceptible to obstacles like walls. It also doesn't penetrate solid objects as effectively as the 2.4 GHz band.
+
+=>  6 GHz Band (Wi-Fi 6)
+Frequency Range: 5.925 GHz to 7.125 GHz (varies by region).
+
+Channels: The introduction of Wi-Fi 6 brings the 6 GHz band, which offers up to 59 new 20 MHz channels, significantly reducing interference and providing more capacity for high-demand applications like 4K/8K video streaming and VR. It can also support channel bonding to achieve 40, 80, and 160 MHz channels for faster speeds.
+
+Advantages: The 6 GHz band offers the least interference since it's less crowded with other devices, making it ideal for high-speed applications. Additionally, the shorter range is a trade-off for cleaner spectrum, reducing congestion.
+
+
+=> Channel Width and Bonding
+In addition to the basic channel allocation, Wi-Fi channels can be bonded together to create wider channels, allowing for faster data transfer speeds:
+
+20 MHz: Standard width, no bonding. This is used in both 2.4 GHz and 5 GHz bands.
+
+40 MHz: A bonded channel, doubling the speed.
+
+80 MHz: Allows for even faster speeds, commonly used in the 5 GHz and 6 GHz bands.
+
+160 MHz: Maximum width, used in the 5 GHz and 6 GHz bands, providing the highest throughput but with greater risk of interference.

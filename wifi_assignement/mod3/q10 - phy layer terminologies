@@ -1,0 +1,25 @@
+=> PPDU (Physical Layer Protocol Data Unit):
+
+    PPDU is the actual data unit that is transmitted at the PHY layer in Wi-Fi communication.
+
+    It consists of a series of bits that includes both data and control information necessary for transmission. A PPDU typically consists of a preamble (for synchronization and channel estimation) , header  and  data field (which carries the actual payload).
+
+    In simple terms, a PPDU is the "packet" at the physical layer of Wi-Fi communication.
+
+=>  PLCP (Physical Layer Convergence Protocol):
+
+    The PLCP is part of the PHY layer that prepares data for transmission by the physical medium.
+
+    It serves as an interface between the MAC (Medium Access Control) layer and the PMD (Physical Medium Dependent) layer.
+
+    The PLCP defines how the MAC layerdata ( MPDU) is encapsulated into a PPDU. It handles the framing of the data, adding a PLCP preamble and header, and ensures that the data is formatted correctly for the physical transmission.
+
+    The PLCP preamble contains synchronization and signaling information for the receiving device, helping it to decode the incoming signal.
+
+=>  PMD (Physical Medium Dependent):
+
+    The PMD defines the actual characteristics and mechanisms of the physical medium ( radio frequencies, modulation schemes, and the transmission and reception of signals).
+
+    It is the part of the PHY layer responsible for transmitting and receiving the actual radio signals (like modulation and demodulation).
+
+    The PMD specifies how the bits (from the PPDU) are actually mapped onto the wireless medium, including factors like frequency bands, modulation types ( QPSK, 16-QAM), and the use of antennas ( MIMO).

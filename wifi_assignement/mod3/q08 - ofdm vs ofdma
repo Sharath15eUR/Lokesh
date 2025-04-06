@@ -1,0 +1,16 @@
+The main difference between OFDM (Orthogonal Frequency Division Multiplexing) and OFDMA (Orthogonal Frequency Division Multiple Access)  is OFDM is about how the data is transmitted over multiple frequencies, while OFDMA is about how different users share those frequencies simultaneously
+
+=> OFDM (Orthogonal Frequency Division Multiplexing):
+
+    OFDM is a modulation technique used to transmit data over multiple frequencies. It splits the data stream into several smaller substreams, each of which is modulated onto a different subcarrier. This allows for efficient use of the available bandwidth, especially in environments with multipath interference (e.g., wireless communication channels).
+
+    OFDM is often used in wireless broadband systems like Wi-Fi (802.11), LTE (Long-Term Evolution), and DVB-T (Digital Video Broadcasting). same signal is transmitted over multiple frequencies.
+
+=> OFDMA (Orthogonal Frequency Division Multiple Access):
+
+    OFDMA is an extension of OFDM that adds a layer of multiple access by dividing the subcarriers in the frequency domain between multiple users. Instead of all subcarriers being used by a single user, OFDMA allocates a portion of subcarriers to different users, allowing multiple users to transmit simultaneously within the same system.
+
+    OFDMA is used to support multiple users at the same time. It is particularly effective in handling variable and high data rates for a large number of users.
+
+    allows multiple users to share the same frequency band by assigning them different subcarriers at different times, improving overall system capacity.
+

@@ -1,0 +1,153 @@
+1. 802.11a
+        Frequency Band: 5 GHz
+
+        Max Data Rate: 54 Mbps
+
+        Modulation: Orthogonal Frequency Division Multiplexing (OFDM)
+
+        Range: Shorter range (compared to 2.4 GHz) due to higher frequency.
+
+        Applications: Primarily for higher-speed, less congested networks.
+
+        Key Features:
+
+        20 MHz channel width.
+
+        Better performance in terms of throughput and reduced interference than 2.4 GHz bands.
+
+        Pros: Less interference, higher speeds.
+
+        Cons: Shorter range, higher susceptible to obstacles.
+
+2. 802.11b
+        Frequency Band: 2.4 GHz
+
+        Max Data Rate: 11 Mbps
+
+        Modulation: Complementary Code Keying (CCK)
+
+        Range: Longer range compared to 802.11a, especially in environments with obstructions.
+
+        Applications: Early consumer devices, IoT, and low-speed applications.
+
+        Key Features:
+
+        Uses 22 MHz wide channels.
+
+        Pros: Longer range, more penetration through walls.
+
+        Cons: Lower data rates, more interference from other devices (microwaves, Bluetooth).
+
+3. 802.11g
+        Frequency Band: 2.4 GHz
+
+        Max Data Rate: 54 Mbps
+
+        Modulation: OFDM (backward compatible with 802.11b CCK).
+
+        Range: Similar to 802.11b.
+
+        Applications: General consumer networks and high-speed data applications.
+
+        Key Features:
+
+        Compatible with 802.11b.
+
+        20 MHz channel width.
+
+        Pros: Good speed and range balance.
+
+        Cons: Same interference issues as 802.11b due to the 2.4 GHz band.
+
+4. 802.11n (Wi-Fi 4)
+        Frequency Band: 2.4 GHz and 5 GHz (dual-band)
+
+        Max Data Rate: 600 Mbps (using 40 MHz channels, 4 spatial streams).
+
+        Modulation: OFDM
+
+        Range: Better range than 802.11a/g due to MIMO (Multiple Input Multiple Output) technology.
+
+        Applications: High-speed internet access, video streaming, file sharing.
+
+        Key Features:
+
+        Uses MIMO to improve throughput by sending multiple data streams simultaneously.
+
+        Channel bonding (up to 40 MHz).
+
+        Backward compatibility with 802.11a/b/g.
+
+        Pros: High speeds, better range, and reliability.
+
+        Cons: Susceptible to interference in the 2.4 GHz band.
+
+5. 802.11ac (Wi-Fi 5)
+        Frequency Band: 5 GHz (primarily)
+
+        Max Data Rate: Up to 6 Gbps (using 160 MHz channels, 8 spatial streams).
+
+        Modulation: 256-QAM (Quadrature Amplitude Modulation), OFDM
+
+        Range: Similar to 802.11a, but improved with higher modulation and wider channels.
+
+        Applications: High-speed data applications (HD video streaming, high-throughput data).
+
+        Key Features:
+
+        80 MHz and 160 MHz channel widths.
+
+        MU-MIMO (Multi-User MIMO) to support simultaneous communication with multiple devices.
+
+        Backward compatibility with 802.11n.
+
+        Pros: Extremely high throughput, minimal interference (since it operates on the 5 GHz band).
+
+        Cons: Shorter range and higher cost.
+
+6. 802.11ax (Wi-Fi 6)
+        Frequency Band: 2.4 GHz and 5 GHz (and support for 6 GHz with Wi-Fi 6E)
+
+        Max Data Rate: Up to 9.6 Gbps (with 160 MHz channels, 8 spatial streams).
+
+        Modulation: 1024-QAM, OFDM
+
+        Range: Improved range due to better efficiency in high-density environments.
+
+        Applications: High-density areas (stadiums, office buildings), internet of things (IoT), ultra-high-speed internet.
+
+        Key Features:
+
+        Orthogonal Frequency Division Multiple Access (OFDMA) for improved efficiency.
+
+        Target Wake Time (TWT) for better battery life in IoT devices.
+
+        Backward compatibility with 802.11a/b/g/n/ac.
+
+        Supports 6 GHz band (Wi-Fi 6E).
+
+        Pros: Extremely high speeds, better efficiency, improved battery life.
+
+        Cons: Still limited by range due to high-frequency operation.
+
+7. 802.11be (Wi-Fi 7) upcomming
+
+        Frequency Band: 2.4 GHz, 5 GHz, and 6 GHz (3 bands)
+
+        Max Data Rate: Expected up to 46 Gbps (using 320 MHz channels, 16 spatial streams).
+
+        Modulation: 4096-QAM, OFDMA
+
+        Range: Improved range compared to Wi-Fi 6.
+
+        Applications: High-speed data applications, AR/VR, ultra-high-definition video.
+
+        Key Features:
+
+        Enhanced channel bandwidth (up to 320 MHz).
+
+        Increased spatial streams for massive multi-user capacity.
+
+        Pros: Extremely high throughput, low latency.
+
+        Cons: Likely requires new hardware and could face issues in crowded radio environments.

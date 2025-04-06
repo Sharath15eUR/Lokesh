@@ -1,0 +1,18 @@
+In WLAN transmission, Guard Intervals  are small time gaps inserted between symbols to prevent Inter-Symbol Interference (ISI), which occurs when signals from previous symbols overlap with those of the current symbol. This overlap happens due to multipath propagation, where a transmitted signal travels via multiple paths ( bouncing off walls or objects), resulting in delays that cause the signal to arrive at the receiver at slightly different times.
+
+The Guard Interval allows for the delayed versions of the signal (multipath components) to dissipate before the next symbol is transmitted, ensuring that the symbols do not interfere with each other, thus maintaining signal integrity and reducing errors.
+
+=> Short Guard Interval (SGI)
+    A short Guard Interval (200 ns) reduces the duration of this gap between symbols compared to the long Guard Interval (400 ns). This shorter interval provides several advantages:
+
+    Higher Data Throughput: With less idle time between symbols, more time is available for actual data transmission, increasing the overall throughput.
+
+    Reduced Latency: Shorter GIs minimize the time spent on the guard period, leading to reduced transmission delays, which is essential for real-time applications like video streaming and online gaming.
+
+    Improved Spectrum Efficiency: More data can be transmitted within the same amount of time, optimizing the use of available bandwidth.
+
+Challenges with Short Guard Interval
+
+    Increased Risk of ISI: If the wireless environment has significant multipath interference (e.g., long distances, many obstacles), the shorter gap may not provide enough time for multipath signals to clear, leading to increased Inter-Symbol Interference (ISI) and potential data errors.
+
+    Suitability for Dense or Complex Environments: Short Guard Intervals are most effective in environments with limited multipath propagation, such as short-range indoor scenarios with fewer obstructions. In long-range or highly reflective environments, the risk of ISI increases, and a long Guard Interval (400 ns) may be needed for better signal clarity.

@@ -1,0 +1,15 @@
+=> MIMO (Multiple Input, Multiple Output):
+
+    Purpose: MIMO allows a single device (such as a router or a smartphone) to send and receive multiple data streams simultaneously using multiple antennas. This improves the capacity of the network and increases the data throughput.
+
+    In a basic MIMO setup, a router with multiple antennas can send multiple data streams to a single device (such as a laptop or smartphone) at the same time. It leverages spatial diversity to increase data transfer rates and improve signal quality.
+
+    Use case:  typically used in point-to-point communication where a single device communicates with the router or access point.
+
+=> MU-MIMO (Multi-User MIMO):
+
+    Purpose: MU-MIMO takes MIMO a step further by enabling a router or access point to communicate with multiple devices simultaneously, each receiving a separate data stream. This helps to distribute the available bandwidth more efficiently across multiple devices.
+
+    Instead of sending data to one device at a time, MU-MIMO allows the router to send different data streams to multiple devices at once. It does this by dividing the available channels into sub-channels and directing them to different users, improving overall network efficiency and reducing congestion.
+
+    Use case: MU-MIMO is especially useful in environments with many connected devices, such as busy households or offices, where multiple devices are accessing the network simultaneously.

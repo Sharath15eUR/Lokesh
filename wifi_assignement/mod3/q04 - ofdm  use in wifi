@@ -1,0 +1,7 @@
+OFDM (Orthogonal Frequency Division Multiplexing) is a key technology for modern Wi-Fi because it enhances both performance and efficiency in wireless communication. It works by dividing a high-speed data stream into multiple lower-speed subcarriers, which are transmitted simultaneously. This parallel transmission allows for better use of the available bandwidth, improving data rates and overall network capacity.
+
+OFDM is particularly effective in mitigating multipath interference and frequency selective fading common issues in wireless environments where signals can reflect off walls and objects, causing delays and signal degradation. By spreading the data across many subcarriers, OFDM ensures that even if some subcarriers are affected by fading or interference, others will still maintain a strong signal, improving reliability.
+
+ OFDM supports adaptive modulation, allowing the system to adjust the transmission scheme based on the quality of each subcarrier. This ensures efficient use of the spectrum in varying channel conditions, enhancing performance and reducing signal loss.
+
+When combined with MIMO (Multiple Input Multiple Output) technology, OFDM allows for the simultaneous use of multiple antennas for transmitting and receiving data, further increasing data throughput, range, and network stability. These advantages make OFDM crucial for high-performance Wi-Fi standards like 802.11ac and 802.11ax, enabling faster speeds, better coverage, and more reliable connections in diverse real world environments.

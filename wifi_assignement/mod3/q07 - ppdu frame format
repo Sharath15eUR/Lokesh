@@ -1,0 +1,39 @@
+The key components of a PHY Layer Frame (PPDU) are:
+
+=> Preamble:
+
+    Purpose: For synchronization and channel estimation.
+
+    Components:
+
+    Short Training Field (STF): Helps with automatic gain control and signal detection.
+
+    Long Training Field (LTF): Used for channel estimation and equalization.
+
+    Signal Field (SIG): Contains information about modulation, coding rate, and frame length.
+
+    The preamble is transmitted using a robust low-modulation scheme ( BPSK).
+
+=> Header (PLCP Header):
+
+    Purpose: Provides the receiver with information on how to decode the payload.
+
+    Contents:
+
+    Rate: Modulation and coding scheme (MCS).
+
+    Length: Size of the MAC payload.
+
+    Service field: Reserved control bits.
+
+    Parity/Error Check: Ensures header integrity.
+
+    The header is decoded before the payload to help prepare the receiver.
+
+=> Payload (PSDU – PLCP Service Data Unit):
+
+    Purpose: Carries the actual user data from the MAC layer.
+
+
+=> Encoding/Modulation:
+     Based on PHY header parameters like MCS, channel width, and guard interval.
