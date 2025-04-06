@@ -1,0 +1,7 @@
+when WLC deployed in WAN , configuring AP in flexconnect mode in local n/w would be a good choice.
+
+In FlexConnect mode control operations are handeled by WLC and data palne operations are handled by AP itself to reduce latency and load for processing the data operation in WLC.
+
+when WLC went down flexconnect mode make AP to be in standalone mode , it cache the control configurations sent from WLC and in standalone mode it can route the data traffic and handle authenitation and  authorization locally using the cached information.
+
+when WLC reconnects it take over the responsibility of control operation so this mode increase high availability and faster communication.

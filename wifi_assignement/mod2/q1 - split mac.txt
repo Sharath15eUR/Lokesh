@@ -1,0 +1,13 @@
+Split MAC architecture in wifi networks introduces a centralized approach to managing wireless communication by dividing the MAC layer responsibilities between Access Points (APs) and a Wireless LAN Controller (WLC). 
+
+
+APs are responsible for time-sensitive operations such as establishing and maintaining realtime connections with client devices, handling data transmission and retransmission, and responding to acknowledgments. 
+
+WLC takes care of control and management functions like user authentication, encryption, security policies, Qos, roaming, and IP address assignment via its built in DHCP functionality.
+
+This separation offloads complex processing tasks from the APs, significantly reducing their computational load and allowing them to focus solely on maintaining robust wireless connectivity. 
+
+The WLC, acting as the central brain of the network, ensures efficient traffic management, secure access control, and seamless mobility such as during handovers between APs without causing service interruptions.
+
+
+centralized nature of the WLC simplifies administration, allowing network administrators to configure, monitor, and update multiple APs from a single point, rather than managing them individually. By implementing Split MAC architecture, wifi networks become more scalable, secure, and efficient, particularly in environments like enterprises, campuses, or public venues

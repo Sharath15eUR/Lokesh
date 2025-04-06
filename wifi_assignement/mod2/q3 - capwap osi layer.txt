@@ -1,0 +1,19 @@
+CAPWAP operates at Layer 3 of the OSI model, the Network Layer, it encapsulates control and data messages within IP packets for transmission over an IP network (both wifi and wired). It functions over any IP network, facilitating communication between Access Points (AP) and Wireless LAN Controllers (WLC).
+
+Routing: CAPWAP can route traffic between different VLAN subnets, supporting network segmentation and routing across various networks.
+
+=> Control Tunnel
+
+ The Control Tunnel is responsible for secure management and control of the AP. It is established first when the AP connects to the WLC.
+
+ Messages within this tunnel are encrypted using Datagram Transport Layer Security (DTLS) to ensure security. The control tunnel transmits    configuration data, AP registration info, and firmware updates to the AP from the WLC.
+
+AP registration, configuration updates, and firmware distribution happen through this tunnel.
+
+=>Data Tunnel
+
+The Data Tunnel is used for transmitting actual user data after the AP is configured. This tunnel handles the communication for activities such as video streaming, voice calls, and internet browsing.
+
+ This tunnel can be either encrypted or unencrypted based on configuration settings.
+
+Data from wireless clients  is forwarded from the AP to the WLC over the data tunnel and then routed to its destination  or directly by ap to destination in flexconnect mode.

@@ -1,0 +1,10 @@
+CAPWAP (Control and Provisioning of Wireless Access Points) is a protocol used to manage communication between lightweight access points (APs) and wireless LAN controllers (WLCs). 
+
+It ensures secure data transmission and encryption while providing centralized control for wifi networks. CAPWAP encapsulates the data exchanged between APs and WLCs, separating control traffic (management and security data) from data traffic (regular data transfer).
+
+It operates exclusively with lightweight APs, which depend on the WLC for wifi transmission and data management. When an AP powers on, it obtains an IP address via DHCP or static configuration and then searches for a WLC using DHCP options, DNS, or broadcast, upon receiving a CAPWAP discovery request, the WLC responds with a discovery response. 
+
+The AP then sends a join request, which the WLC authenticates before responding with a join response, allowing the AP to connect to the WLC. If the AP is outdated, the WLC provides updated configuration, including wifi settings, SSID, encryption, and VLAN information. Following successful connection, the AP encapsulates data into CAPWAP packets, which the WLC processes and transmits. 
+
+
+The AP regularly sends heartbeat messages to confirm an active connection, attempting to reconnect if the WLC connection is lost.

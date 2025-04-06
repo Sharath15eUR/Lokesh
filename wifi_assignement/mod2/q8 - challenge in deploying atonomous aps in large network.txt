@@ -1,0 +1,13 @@
+The challenges faced when using autonomous AP s in large network like university are follows:
+
+=> interference
+=> configuration and management issue
+=> position and placement of accesspoint
+=> load balancing between APS
+=> troubleshooting issues
+=> high cost of maintainece
+=> policy enforcement and security configuration issues
+=> handoff handling issues 
+=> network and vlan isolation and management issues
+
+all these issue arise as the control was not managed centrally and remain locally to each individual AP and not feasible for huge network like university or enterprise

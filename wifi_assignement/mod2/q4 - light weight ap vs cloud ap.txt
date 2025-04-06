@@ -1,0 +1,33 @@
+=> Lightweight Access Points (LAPs):
+
+Dependency on WLC: Lightweight APs are managed by a centralized Wireless LAN Controller (WLC).
+
+Control and Configuration: The WLC handles the configuration, management, and control of all connected APs. APs forward all data traffic to the WLC.
+
+Centralized Management: All APs are configured and controlled from the WLC, offering centralized management for network administrators.
+
+Scalability: Limited scalability; to support more APs, the WLC must be upgraded to a more scalable version.
+
+No Cloud Management: Requires manual installation and configuration of the WLC.
+
+Security and Latency: Provides better security with lower latency since the WLC is local.
+
+Data Loss: Lower risk of data loss as the WLC handles all the traffic management.
+
+=> Cloud-Based Access Points:
+
+Cloud-Controlled: Managed and controlled via a cloud portal, with no need for a local, physical WLC.
+
+Remote Configuration: Network administrators log into the cloud dashboard to configure and control APs remotely.
+
+Scalability: Highly scalable with the ability to connect many APs to a single cloud controller.
+
+No Manual Configuration: No need for local controller installation, as everything is handled remotely.
+
+Security: Uses secure protocols though there might be concerns regarding data loss.
+
+Costs: More expensive due to cloud management services and subscription fees.
+
+Data Loss and Latency: Potential data loss and higher latency due to cloud dependence; response times may be slower, especially if there an internet connection issue.
+
+Internet Dependency: Relies heavily on the internet for connectivity and management; if the internet goes down, access to the cloud resources is lost.

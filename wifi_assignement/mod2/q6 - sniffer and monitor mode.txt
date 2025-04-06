@@ -1,0 +1,19 @@
+=> Sniffer Mode:
+
+Purpose: Sniffer mode is used to capture and analyze wireless traffic on a network.
+
+Functionality: When a device is in sniffer mode, it listens to the wireless signals in the air and captures packets transmitted over the network. The device does not actively participate in the network but can observe and log the traffic for analysis. This mode is often used for troubleshooting, security analysis, and network performance monitoring.
+
+Data Collection: It can capture various types of data, such as packets, their source, destination, and content .
+
+typically used by network administrators or security experts for tasks like monitoring traffic patterns, diagnosing issues, or analyzing network performance.
+
+=>  Monitor Mode:
+
+Purpose: Monitor mode is a special mode used to receive and capture all wireless traffic in the area, not just the traffic intended for the device.
+
+Functionality: When a device is in monitor mode, it can capture packets from all networks in the vicinity, including those that are not directly associated with the device. This means it can detect all traffic regardless of whether the packets are directed at the device.
+
+Data Collection: It allows a much more comprehensive capture than sniffer mode, as it can see all traffic on a channel (including traffic from different APs or client devices).
+
+ Monitor mode is often used for more advanced network analysis, such as wireless security assessments, detecting rogue APs, or scanning for vulnerabilities in the network.

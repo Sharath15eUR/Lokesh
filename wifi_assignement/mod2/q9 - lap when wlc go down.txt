@@ -1,0 +1,7 @@
+lap relies on wlc for both control and data plane operations by default normally use capwap to connect with wlc and perform the networking operations like connection management and data transfer.
+
+when wlc go down if lap are configured in default mode then it tries to reconnect / restablish the connection between the wlc or other wlc available in the network and transfer the traffic after connection established.
+
+if wlc , lap connection is not establishable then ap cannot able to perform any connumication.
+
+to overcome this issue we can use the flex connect mode to make the lap in standalone mode when wlc connetion was broken and again act as lap when wlc connection established.

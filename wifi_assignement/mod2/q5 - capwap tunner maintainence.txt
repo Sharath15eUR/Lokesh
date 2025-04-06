@@ -1,0 +1,45 @@
+CAPWAP (Control and Provisioning of Wireless Access Points) is a protocol used for communication between a Wireless Access Point (AP) and a Wireless LAN Controller (WLC). The CAPWAP tunnel ensures that the AP and WLC can exchange control and management messages for things like configuration, status, and data traffic.
+
+The maintenance of the CAPWAP tunnel involves several steps and processes:
+
+=>  CAPWAP Tunnel Establishment:
+
+When the AP boots up, it does not know the IP address of the WLC. To establish the CAPWAP tunnel, the AP uses a few methods:
+
+DNS Lookup: The AP may perform a DNS query for a predefined WLC hostname.
+
+DHCP Option 43: The AP can receive the WLC s IP address from a DHCP server.
+
+Static Configuration: In some cases, the WLC s IP address may be statically configured on the AP.
+
+After obtaining the WLC’s address, the AP initiates a connection by sending a CAPWAP discovery request to the controller.
+
+=>  CAPWAP Tunnel Setup (CAPWAP Discovery and join prrocess):
+
+Discovery Request: The AP sends a CAPWAP discovery request to the WLC, which includes its MAC address and other information.
+
+Controller Response: The WLC sends a CAPWAP discovery response with its IP address and any relevant information.
+
+Join Request: Once the AP discovers the WLC, it sends a CAPWAP join request, including the APs capabilities and configuration.
+
+Join Response: The WLC replies with a join response that includes the APs configuration, including SSID, VLAN settings, security parameters, etc.
+
+
+=> CAPWAP Tunnel Maintenance:
+
+Heartbeat Messages: After the tunnel is established, the AP and WLC exchange heartbeat messages to ensure the tunnel remains active. This allows both devices to detect failures (such as a link failure) and re-establish communication if necessary.
+
+Keep-alive: The AP and WLC send keep-alive messages (every few seconds) to check if the link is still valid and the tunnel is operational. If the WLC fails to receive a keep-alive message within a specified time (timeout), the tunnel is considered down, and the AP may attempt to reconnect.
+
+Error Recovery: If an error occurs or the tunnel is interrupted ( due to network failures or AP mobility), the CAPWAP protocol includes mechanisms for the AP to automatically retry or reconnect to the WLC.
+
+=> Data Forwarding (Optional Tunneling Mode):
+
+In CAPWAP data can be forwarded in one of two ways:
+
+Centralized Mode (Tunnel Mode): In this mode, all data traffic from clients connected to the AP is sent through the CAPWAP tunnel to the WLC for processing and forwarding.
+
+Local Mode: The AP can also be configured to forward traffic locally, without tunneling it back to the WLC, but this depends on the configuration.
+
+=> Session Timeout & Tunnel Tear Down:
+If the AP and WLC stop communicating due to a prolonged failure or network issue, the tunnel will eventually time out and be torn down. This means the AP will either go into a fallback mode or attempt to reconnect to the WLC, depending on the configuration.
