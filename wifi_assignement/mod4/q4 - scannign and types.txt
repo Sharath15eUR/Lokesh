@@ -1,0 +1,20 @@
+In wifi networks scanning is the process by which a wireless device discovers available AP , it  process is essential for connecting to networks, roaming between access points, and maintaining stable wireless communication. 
+
+There are two main types of scanning: passive scanning and active scanning. 
+
+=> passive scanning
+
+the device listens for beacon frames that are periodically broadcasted by access points. These beacons contain essential network information such as the SSID , supported data rates, security settings, and channel details. Passive scanning is power efficient and does not reveal the presence of the scanning device, making it suitable for devices that prioritize battery life or security. 
+
+it is slower than active scanning and may not detect hidden networks that do not broadcast their SSIDs
+
+=>active scanning 
+
+it involves the device sending out probe request frames on different channels. Access points that receive these probes respond with probe response frames that include their network information.
+
+ Active scanning is faster and can detect hidden networks if they are configured to respond to probe requests
+
+ it consumes more power and can make the device more detectable, which may be a concern in privacy sensitive environments.
+
+
+ Both scanning methods are used depending on the context, active scanning is commonly used when a user initiates a connection, while passive scanning is often used in the background or during roaming to reduce power usage and network disruption.

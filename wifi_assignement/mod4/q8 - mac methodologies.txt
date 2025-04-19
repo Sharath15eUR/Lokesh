@@ -1,0 +1,18 @@
+in wifi csma/ca was used predomoninently for mac control efficiently
+
+3 type of methodologies are used primarily
+
+1) pcf(point coordination function)
+
+	old and deprecated , AP maintan list of client and poll the client from the available pool and schedule the communication , only the client polled by ap can perform data transfer , it has less conjestion but low throughput and spectral effiency
+
+2) dcf ( distributed conridination function)
+	
+	use csma/ca , it physically senee the energy level of the medium along with csma/ca with cts, rts etc to virtyally sense the medium and access it , it is distributed but it does not have qos but improved spectral usage
+
+use contention time ( same for all traffic)
+
+3) edca( enhanced distributed channel access)
+
+it include qos with dcf by using different contention time and period for each type of traffic with less contention time (cwmin , cwmax) less cwmax for priority traffic , so backoof reduced and qos can be dones
+

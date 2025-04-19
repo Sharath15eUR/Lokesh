@@ -1,0 +1,5 @@
+wifi is a duplex communication where all the frames require ACK from the reciver before sending the next frame , but the issue is ACK for each frame increase the overhead and reduce the throughput
+
+to overcome this frame aggregation was used and the aggregated frames are block ACK with the start frame number and the position for the framed recived succesfuly
+
+the frame sequence no missing in ack are retransmitted and this reduce the overhead along with hight throughput due imporved utilization of the medium .

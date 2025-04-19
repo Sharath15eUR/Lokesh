@@ -1,0 +1,26 @@
+mac layer determine and handle how devices communicate with the wireless medium without any issues.The mac frame to manage these process are broadly categorize into 3 typs 
+
+=> management frames
+=> control frames
+=> data frames
+
+=<managementframes>=
+
+it handle the network discovery , auth , association and maintinence with frmaes like becon transmition , probe req and res
+auth with process like epol , dissocation , power magnt with sleep and buffering during sleep (ps poll , null data) etc 
+
+its main purpose to to manage the communication setup and maintaince overhead
+
+=<contrl frames>=
+
+cntrl frames manage the activites like flow , error , medium access operations
+
+use RTS , CTS in CSMA/CA  for virtual sensing of carrier and coordinate communication, ACK and Block ACk  to confirm the reception of frames and facilitate retransmition , NAV used along with duration in header to reserve the medium for efficient medium usage, also provide legacy frame compatibility .
+
+=<data plane>=
+
+handle features like  frame encapsulation, mac addressing for header (1-4), qos prioritization with different queue for different topic like voice , video, besteffort, bg. 
+
+enc/dec of data , flow contrl by sharing the capability and using the appropriate params along with flow cntrl and Frame Aggregation for improved data rate and throughput
+
+these are the different frames in wifi mac haader

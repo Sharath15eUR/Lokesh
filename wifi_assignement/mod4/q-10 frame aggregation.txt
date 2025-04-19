@@ -1,0 +1,15 @@
+frame aggregation is combining multiple mac frames to improve the spectral usage due to reduced overhead and increase throughput
+
+=> A-MPDU
+
+multiple mpdu with separate mac header are aggregated with signle phy layer header , if any one sub frame is corrupted , as each frame as separate crc only corrupted frame retransmition needed but high overhead.
+
+=> A=MSDU
+
+in this msdu are aggregated with single mac and phy header so the overhead decreased but the issues is if any one sub frame fail all need to be re transmited
+
+=> A=MSDU insid A-mpdu
+
+multiple msdu like 2 or 3 are aggregated with signle mac header and multiple similar mpdu chunks are aggregated with same phy header this is the middle ground b/w the above 2 method and provide better effienct along with data security.
+
+block ack was used in the aggregation

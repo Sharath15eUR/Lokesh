@@ -1,0 +1,9 @@
+=> The MAC (Media Access Control) layer plays importnt role in managing how devices on a wireless network communicate with each other.
+
+=> It is a sublayer of the Data Link Layer, which is Layer 2 in the osi model. In the context of wifi the MAC layer is responsible for coordinating access to the shared wireless medium. 
+
+=> Unlike wired networks where each device may have a dedicated cable wifi uses rf waves so  devices must take turns using the same frequency to avoid collisions.
+
+=> The MAC layer ensures this happens efficiently using mechanisms like CSMA/CA ,  It also handles frame addressing, error detection, frame sequencing, acknowledgments, and retransmissions, which are essential for reliable communication over an inherently unstable and noisy medium like wireless.
+
+=> The MAC layer manages authentication and association processes that are vital for connecting to wifi networks securely.

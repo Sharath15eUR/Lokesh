@@ -1,0 +1,13 @@
+the client undergo the following 4 steps to associate with ap
+
+1) discovery pahse => use active or passive scanning to determine the best channel and network to associate with
+
+2)authentication phase => in this part the client ap may follow open auth ( direct connect) or use shared key with 4 way method like epol, sae etc to verify client have proper permission to access the ap.
+
+3)Association phase=> after auth was setup association req and req are shared b/w client and ap to connect with bss and start the communication .
+
+4) dhcp => ip addr was assigned to the client by ap or control server when associated with bss
+
+after association key ptk (parwise temprol key) , gtk(group temporal key) in wpa2 or commitemt and key gen in wpa3 are done for secured data sharing.
+
+these are the steps involved in client ap association

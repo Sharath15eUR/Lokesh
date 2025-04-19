@@ -1,0 +1,29 @@
+Power saving mode was incorporated in mac layer of wifi to reduce the power consumption in client device when they are idle espically for the battery powered device like phn , iot based devices etc.
+
+the steps flowed usually are follows:
+
+1) client enter the sleep mode by sending the empty frame and ps bit to 1 indicate it is in power save mode and AP buffer the data during this sleep time and set the bitmap for DTIM( delivery traffic indicator msg) and send it as brodcase to notify the client in ps mode  as some frame are destined and buffered by AP
+
+2)dtim was brodcated peridocally as a special becom frame with dtim bitmap
+
+3) the client in ps mode when wake up see the dtim bitmap and if the bit set for current client and it request PS-poll to AP to get the buffered msg till no other msg (more msg =0) in the respone frame
+
+
+=> type of ps modes
+
+1) psm(power save mode)
+
+	standard mode the client sleep and become active peridocally and follow above procedure not extra work performed
+
+2)secheduled and unscheduled automatic peower save mode
+
+ unschedules is done when triggered to increase qos and scheduled is based on pre negotiated plans between client and ap
+
+3) power save multipoll
+ enhanced ps mode to poll multiple msg at same time
+
+4) target wake time ( wifi 6 and above)
+
+client and ap negotiate the schedule for active time and the client recive and send the data when active , and went back to sleep after interval over , ap buffer data when client sleep and transmit when active , it reduce contention and improved qos.
+
+improve battery , congetion and effiency

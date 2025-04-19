@@ -1,0 +1,24 @@
+mac header is a critical component of wifi used to control access to the wireless medium and to manage how frames  transmitted between devices.
+
+Frame Control , Duration ,Address 1,Address 2,Address 3,Sequence Control,Address 4,QoS Control,HT Control ,Frame Body,FCS
+
+=> Frame control : it identifies the type of frame and its contrl informations , it have field like protocol version , type, subtype , to/from ds , morefragment, powermgmt etc.
+
+=> Duration : manage the time duration the medium is reserved using NAV(network allocation vector)
+
+=>ADDRESS Fields
+	Addr 1=> dest mac(reciver)
+	Addr 2 => src mac(Sender)
+	Addr 3 =>BSSID (normally ap mac)
+	Addr3 => optional only when in wds(wireless dist mode) ie bridging b/w network (dest ap mac)
+
+=>Sequence number: contain frame no and seq no used for ordering and duplicate identification
+
+=>Qos : contain detail to maintain qos like pritorization for traffic like voice etc , it is optional
+
+=>Frame body : this is the actual payload data + upper layer headers
+
+=> FCS : frame check sequence used to determine the integrity by calulating and matching at the reciver end.
+
+
+these are the wifi mac header fields and its purpose.
