@@ -1,0 +1,12 @@
+Multi Link Operation (MLO) enables devices to simultaneously utilize multiple communication links across different frequency bands, improving overall network performance,  MLO allows devices to combine links from various frequency bands ( 2.4 GHz, 5 GHz, 6 GHz) to enhance data transmission capabilities.
+
+impact of MLO on throughput :
+
+By aggregating bandwidth from multiple links, MLO increases the overall data rate, allowing for faster data transfers and more efficient use of available spectrum. This is particularly useful in high-demand environments, as it enables load balancing across multiple channels, reducing congestion on any single link and enhancing overall throughput. If one link is congested or interfered with, MLO can shift traffic to other links, minimizing the risk of performance degradation.
+
+impact of ML on  latency:
+
+MLO can also help reduce delays. By spreading data traffic across multiple links, it can avoid bottlenecks that could otherwise cause higher latency on a single channel. If one link experiences high congestion or interference, the system can dynamically route traffic through another available link, resulting in a more stable and responsive connection.
+
+
+reduction in latency depends on how efficiently the network manages the links and the quality of the individual links. Poor link quality or ineffective management might  result in higher latency even multiple links are used  

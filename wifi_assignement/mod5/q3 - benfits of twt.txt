@@ -1,0 +1,11 @@
+Target Wake Time (TWT) introduced in the IEEE 802.11ax (wifi 6)  is a power-saving mechanism that plays a crucial role in enhancing the efficiency and battery capacity of IoT devices within wireless networks
+
+TWT allows  IoT device and  access point (AP) to negotiate specific wake-up and sleep schedules, defining precise service periods during which the device is expected to be active for data transmission or reception
+
+Outside the negotiated interval  the device remains in a low power sleep mode  significantly reducing energy consumption. 
+
+This scheduled communication not only extends battery life but also minimizes contention on the wireless medium, as devices are not contending for access randomly.
+
+TWT enhances scalability in dense IoT environments by coordinating device activity, reducing channel congestion, and lowering the probability of collisions. 
+
+TWT improves Quality of Service (QoS) for latency sensitive applications by enabling deterministic and predictable communication intervals. This makes it particularly advantageous in scenarios like industrial automation, healthcare monitoring, and smart metering, where timing, reliability, and energy efficiency is importnt

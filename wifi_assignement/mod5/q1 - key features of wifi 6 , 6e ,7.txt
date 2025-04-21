@@ -1,0 +1,11 @@
+wifi 6 (802.11ax)  major improvement over wifi 5 (802.11ac) are increasing speed, efficiency, and capacity. 
+
+Unlike wifi 5, which only works on the 5 GHz band, wifi 6 operates on both 2.4 GHz and 5 GHz, and introduces technologies like OFDMA and uplink/downlink MU-MIMO to allow more devices to connect simultaneously without slowing down. 
+
+It also supports 1024-QAM for faster data transmission and includes Target Wake Time (TWT) to save power on devices like phones and iot devices.
+
+wifi 6E extends all these features into a newly opened 6 GHz band, which is much less crowded allow  faster, interference free connections with wider channels (up to 160 MHz).
+
+ wifi 7 (802.11be) builds on this by introducing 320 MHz channels, 4096-QAM for ultra fast speeds, and Multi-Link Operation (MLO), which allows devices to send and receive data across multiple bands at once. 
+
+Compared to wifi 5, wifi 6/6E/7 drasticaly improve network performance, especially in crowded environments or smart homes with many connected devices.

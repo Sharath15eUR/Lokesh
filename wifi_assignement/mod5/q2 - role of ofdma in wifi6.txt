@@ -1,0 +1,13 @@
+OFDMA (Orthogonal Frequency Division Multiple Access)  enhance the performance of wifi 6 (802.11ax) by significantly improving the efficiency of how data is transmitted over the wireless network
+
+previous wifi standards that use OFDM (Orthogonal Frequency Division Multiplexing), where each channel is allocated to a single user at a time
+
+OFDMA divides a channel into smaller sub-channels called Resource Units (RU), which can be assigned to multiple users simultaneously
+
+this allows wifi 6 to handle multiple devices more efficiently, reducing latency and increasing overall network throughput, especially in dense environments like offices, stadiums, or smart homes with many connected devices
+
+with parallel transmition and reduced idle time OFDMA minimizes contention resulting in faster and more reliable connections for all users on the network
+
+
+
+

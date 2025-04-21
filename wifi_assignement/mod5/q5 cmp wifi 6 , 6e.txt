@@ -1,0 +1,15 @@
+wifi 6e have all the capapblities of wifi6 but in addition it also have the features corresponding to 6GHz band.
+
+Range:
+wifi 6 operates in the 2.4 GHz and 5 GHz bands, with the 2.4 GHz band providing better range due to its longer wavelength ,wifi 6E operates in the 6 GHz band in addition to remaining 2 bands, which has a shorter range because higher frequency signals are more easily absorbed by obstacles. As a result, wifi 6E in 6GHZ band  is generally better suited for shorter-range, less obstructed environments
+
+Bandwidth:
+wifi 6 supports up to 160 MHz of bandwidth in the 5 GHz band, offering fast speeds and low latency. However, because it shares this spectrum with many other devices, the available bandwidth can be congested, especially in crowded environments. wifi 6E introduces the 6 GHz band, which allows for even wider channels (up to 160 MHz) and less interference, results in higher overall bandwidth, offering faster speeds and more reliable performance in crowded envirement.
+
+Interference:
+wifi 6 can suffer from interference in both the 2.4 GHz and 5 GHz bands, as these bands are commonly used by many other devices like microwaves, Bluetooth devices, and older wifi networks. In contrast, wifi 6E takes advantage of the newly available 6 GHz spectrum, which is less congested and faces significantly less interference. This gives wifi 6E a distinct advantage in environments with heavy wireless traffic by providing stable connection at faster speed.
+
+
+
+
+

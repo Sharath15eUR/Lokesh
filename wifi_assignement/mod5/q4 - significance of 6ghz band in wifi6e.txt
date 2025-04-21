@@ -1,0 +1,5 @@
+The 6GHz band in wifi 6E is a significant advancement because it adds a large chunk of new, interference free spectrum for  faster and more reliable wireless connections
+
+Traditional wifi bands—2.4GHz and 5GHz  become crowded due to the growing number of connected devices. 
+
+The 6GHz band provides up to 1,200 MHz of additional spectrum  which allows for wider channels, less congestion, and lower latency. This is especially beneficial for high bandwidth applications like 4K/8K streaming, AR/VR, video conferencing, and gaming.

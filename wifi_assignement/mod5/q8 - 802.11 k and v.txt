@@ -1,0 +1,7 @@
+The 802.11k and 802.11v  play crucial roles in improving wifi roaming efficiency and performance
+
+802.11k enhance the roaming decision making process by providing clients with information about nearby access points (APs). This is known as Radio Resource Management (RRM), where the AP shares a neighbor report with the client, helping it quickly identify the best target AP for a potential handoff, reducing scan time and improving handover speed
+
+802.11v introduces Access Point assisted handoff  where the network can influence client roaming behavior by suggesting better APs based on signal quality, load balancing, or client location. It allows features like BSS Transition Management, where the AP can actively guide the client to roam to a more optimal AP, improving overall network performance and user experience
+
+together 802.11k and 802.11v create a smarter and more seamless wifi roaming

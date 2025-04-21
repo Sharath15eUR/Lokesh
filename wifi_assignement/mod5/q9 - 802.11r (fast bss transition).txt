@@ -1,0 +1,13 @@
+Fast BSS Transition (FT) 802.11r standard is a feature that enhances roaming performance in wifi networks, especially for mobile devices. Its main goal is to reduce the delay that occurs when a device moves between access points (APs) within the same network. 
+
+Traditionally every time a device switches AP it must go through a full authentication process, which can take several hundred milliseconds,  for real-time applications like voip, video streaming it is an issue.
+
+802.11r solves this by allowing the device to complete key negotiation with neighboring APs in advance, making handoffs almost seamless.
+
+There are two types of Fast BSS Transition:
+
+Over-the-Air FT: The client communicates directly with the target AP during the handoff process.
+
+Over-the-DS FT (Distribution System): The client communicates with the target AP through the current AP over the wired network (distribution system).
+
+Both types aim to reduce handoff time and ensure smoother transitions

@@ -1,0 +1,11 @@
+In enterprise wifi networks seamless roaming is achieved using several IEEE 802.11 enhancements to minimize delay, packet loss, and service interruptions as clients move between access points (APs) 
+
+The 802.11k standard plays a key role by allowing APs to provide clients with a neighbor report—a list of nearby APs and their channels—so that the client can make informed decisions and scan only relevant channels, significantly speeding up the roaming process
+
+802.11v enables network-assisted roaming by allowing APs or wireless controllers to suggest better APs to clients based on signal strength, congestion, or other factors. proactive steering helps prevent sticky clients and promotes better load balancing. To further improve the handoff process
+
+802.11r introduces Fast BSS Transition  which streamlines authentication during roaming, instead of going through a full authentication again, clients can use pre established keys to quickly re authenticate with the new AP ensuring minimal delay 
+
+Radio Resource Management (RRM) dynamically optimizes RF parameters like channel selection, transmit power, and coverage, enhancing overall wifi performance and reliability during roaming.
+
+while 802.11 k,v assist in handoff initiation process , 802.11r assist at attachment or roaming completion, so all these 3 version work together to perform smooth and efficient roaming of wireless client with mainting qos

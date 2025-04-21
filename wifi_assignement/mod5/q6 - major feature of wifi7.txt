@@ -1,0 +1,11 @@
+wifi 7 (802.11be) introduces several significant feature over previous gen like enhance speed, capacity, and efficiency in wireless networks. 
+
+it include key  features such ashigher data rates, supporting up to 46 Gbps through the use of wider channel bandwidths (up to 320 MHz). 
+
+It also utilizes 16 spatial streams for increased throughput. wifi 7 incorporates 4096-QAM which allows for denser data transmission, further boosting speeds
+
+to improve performance in crowded environments, it introduces multi-link operation (MLO), enabling devices to transmit and receive across multiple bands simultaneously, reducing latency and improving reliability'
+
+wifi 7 also enhances channel access efficiency with enhanced MU-MIMO, allowing better management of simultaneous data streams
+
+target wake time (TWT) is optimized, leading to more efficient power management for IoT devices
