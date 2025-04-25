@@ -1,0 +1,3 @@
+when worong passphrase give during the authentication , eapol will fail after the 2nd msg where the mic sent by client was checked by ap, as the pmk created with the passphrase given and it further derive mic and ptk etc worong passphrase generate different key at client and server side so mic check fails so further process not proceeds and client cant able to connect to ap as eapol failed .
+
+client retry some time to avoid accidental corrupted packet but after retry some time client can again give other hrase or contine the above process

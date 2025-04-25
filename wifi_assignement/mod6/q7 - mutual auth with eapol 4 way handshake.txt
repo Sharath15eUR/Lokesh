@@ -1,0 +1,11 @@
+During the eapol 4 way handshake process ptk was derived from the pmk and nounce from ap and sta along with ther mac by the client
+
+once ptk was derived by client , mic was created and encrypted with ptk and at receiver side using the snounce ptk derived by ap and mic was decrypted and ap using the available details generate the mic and verify both are same .
+
+then gtk was sent using ptk along with mic and client regenerate mic at its side and check mic and send ack finally.
+
+in this process both details and key sent by client and ap are verified about its integrity though the mic so mutual authentication was established between client and ap.
+
+in enterprise leve eap-tls etc certificate are share between ap and client and verified with help of ca before the handshake process thus in all the startegies client and ap verify each other integrity  alos once key setup are done re initsilation to create new key was prevented by using  the flag in the packet so mitm attack can be neglected.
+
+by this way eapol enfore mutual authentication between client and ap.

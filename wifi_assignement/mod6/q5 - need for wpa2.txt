@@ -1,0 +1,7 @@
+wpa was introduced to resolve the issue of wep which use same rc4 along with tkip to provide per packet key derived for different packet for ptk , but it was an temperory fix as the encryption algorithm used is less secured, to provide more roubust security wpa2 was introduced.
+
+wpa2 replace rc4 with aes and used ccmp aes to encrypt the data , as aes is stronger algo it require hardware upgrade to process these encryption, this wpa2 provide enhanced security by following complex cipher method make decrypt difficult and almost impossible if wellmixed password was used.
+
+even though wpa2 has enhanced security the issue with it was it use preshared key ( derived from passphrase) so eapol capture can provide oppurtnity to crack the data so sae introduce in wpa3 to further enhance the security.
+
+the main reason of wpa2 is to provide tough to crack passwd with 128 bit key along with aes algo.

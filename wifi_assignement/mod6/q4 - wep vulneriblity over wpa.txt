@@ -1,0 +1,3 @@
+The vulnerability of wep compared to wpa was , wep uses 24 bit iv and static key with older rc4 algorithm to encrypt the data so with todays computing capacity it is easy to crack the network with captured packet and performing the dictionary attack
+
+wap2 solve this issue by using random keys, incorporating more robust AES algorithm and wpa3 even eliminate the preshared key attack by using sae with commitment and algo like eleptic curve to generate the keys at the node and use it for aes so provides even more secured and robust security mechanism

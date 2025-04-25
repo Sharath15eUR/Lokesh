@@ -1,0 +1,13 @@
+wifi security is built upon several  pillars designed for  protecting wireless networks from unauthorized access and data breaches.
+
+encryption  primarily through protocols like WPA2  and WPA3 use AES (Advanced Encryption Standard) to encrypt traffic between devices and access points, preventing eavesdropping. 
+
+WPA3 further enhances security with Simultaneous Authentication of Equals (SAE), a key exchange protocol that resists offline dictionary attacks and replaces the less secure  (PSK) mechanism of WPA2.
+
+Another pillar is authentication, where enterprise-grade networks use protocols like IEEE 802.1X in conjunction with a RADIUS server to authenticate users and devices before granting network access, using EAP (Extensible Authentication Protocol) methods such as EAP-TLS (which leverages certificates for strong mutual authentication). Access control is also essential and involves MAC address filtering, VLAN segmentation, and the use of firewalls to limit what users can access once connected.
+
+Integrity protection ensures that data is not tampered with in transit , WPA2 uses the CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol), while WPA3 strengthens this with more robust encryption algorithms.
+
+ Finally, network visibility and monitoring through intrusion detection systems (IDS), wireless intrusion prevention systems (WIPS), and logging tools enables administrators to detect and respond to threats in real-time
+
+these pillars create a multi layered defense  to safeguard wifi communications against a wide range of security threats

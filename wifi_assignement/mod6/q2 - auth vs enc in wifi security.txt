@@ -1,0 +1,7 @@
+authentication is the part of wifi security which validates the integrity of the current user approach to access the wifi ap or network and encryption is the mechanishm followed in the wireless communication process to scramble the data transferd to prevent data leak through sniffing the packet.
+
+in EAPOL process first 2 step are the auth step and the final 2 are auth establish and encryption key generation step.
+
+generating ptk, gtk and checkin mic are the process involved and auth was completed by verifying the mic which was encrypted by the generated key. so the ptk and gtk consist of sub keys used with algo like aes, tkip etc to ecrypt the wifi frames.
+
+auth is  part to check the identiy and authorization level, key gen and scrambling of data belogs to encryption part.

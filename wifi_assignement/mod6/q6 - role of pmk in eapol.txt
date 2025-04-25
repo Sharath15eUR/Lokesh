@@ -1,0 +1,3 @@
+pmk (pairwise master key) was the shared key between ap and client derived for passphrase or sae process based on the type of security protocol used.
+
+this pmk was further used to generate the ptk with the help of Anounce, Snounce , mac addr of ap and client, so pmk will act as the base information to derive the ptk and gtk for further encryption and pmk was derived by the passphrase in wpa2 and in wpa3 pmk created with help of sae which use cryptographic problem to generate key directly at node without the use of passphrase so even the less secure password can be difficult to crack.

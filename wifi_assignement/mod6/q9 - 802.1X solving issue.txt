@@ -1,0 +1,9 @@
+802.1X solves the problem of unauthorized access to a network.
+
+Without 802.1X anyone can connect to a wired or wireless network if they are within range or have physical access which  is a serious security risk
+
+802.1X controls who can access the network by requiring devices to authenticate (prove their identity) before they are allowed to connect. It ensures that only authorized users or devices can join the network
+
+it is for enterprise level network or protocol were ther are suppliant , authenticator and auth server with EAP metods over lan .
+
+it include authenticat with certificate and eapol handshake process.

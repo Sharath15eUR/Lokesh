@@ -1,0 +1,13 @@
+802.1X significantly enhances network security compared to older methods like WEP and WPA/WPA2-Personal
+
+in traditional setups, especially in home or small networks, a single pre-shared key (PSK) is used by all users to connect to the network. This creates serious security risks if the password is shared or compromised, anyone can access the network, and there's no way to track individual users or control their access
+
+In contrast, 802.1X uses individual authentication for each user or device, typically through usernames and passwords or digital certificates. It works with a RADIUS server to verify credentials before granting access to the network, ensuring that only authorized users can connect
+
+ This eliminates the problem of shared passwords, allows for easy removal or blocking of specific users, and supports logging for accountability
+
+It also enables dynamic encryption keys and can assign users to different VLANs based on their role, adding another layer of protection
+
+
+
+

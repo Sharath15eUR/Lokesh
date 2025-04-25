@@ -1,0 +1,11 @@
+WEP (Wired Equivalent Privacy):
+WEP used the RC4 stream cipher with a static 40 or 104-bit key and a 24-bit IV, which led to severe vulnerabilities due to IV reuse, weak key management, and lack of proper integrity checks. Its use of CRC-32 for error checking could be exploited to modify packets without detection. These flaws made WEP easily crackable using passive attacks and widely available tools.
+
+WPA (Wi-Fi Protected Access):
+WPA was introduced as a quick fix to WEP's flaws without requiring hardware changes. It retained RC4 but added TKIP (Temporal Key Integrity Protocol), which addressed WEP's static key problem by generating a new 128-bit key for each packet. It also extended the IV to 48 bits to prevent reuse and included the Michael Message Integrity Code (MIC) for packet tamper detection. TKIP also introduced key mixing and frequent rekeying, significantly improving security over WEP.
+
+WPA2 (Wi-Fi Protected Access II):
+WPA2 replaced RC4 and TKIP with AES encryption in CCMP mode, providing stronger confidentiality and integrity. AES-CCMP uses a 128-bit key and includes robust counter mode encryption with CBC-MAC for authentication, eliminating RC weaknesses. WPA2 also supports 802.1X for enterprise-level authentication and ensures secure key exchange, addressing WPA reliance on legacy ciphers and improving overall cryptographic strength.
+
+WPA3 (Wi-Fi Protected Access III):
+WPA3 enhances WPA2 by replacing the pre-shared key (PSK) exchange with SAE (Simultaneous Authentication of Equals), a more secure key establishment protocol that offers resistance to offline dictionary attacks. It enforces forward secrecy, meaning session keys remain secure even if the long-term key is compromised
