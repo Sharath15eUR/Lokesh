@@ -1,0 +1,133 @@
+PS C:\Users\loges\Documents\Lokesh\advancedC_assignement\mod1_and_mod2> gcc .\q1_calander_struct.c -o q1
+PS C:\Users\loges\Documents\Lokesh\advancedC_assignement\mod1_and_mod2> ./q1
+
+Menu:
+1.Add tasks to a day
+2.Display all tasks
+3.Exit
+Enter your choice: 1
+Enter day name: monday
+more 3 task can be added
+Enter task 1 or done to stop: sample task
+Enter task 2 or done to stop: second sample
+Enter task 3 or done to stop: done
+
+Menu:
+1.Add tasks to a day
+2.Display all tasks
+3.Exit
+Enter your choice: 1
+Enter day name: wednesday
+more 3 task can be added
+Enter task 1 or done to stop: sample wed
+Enter task 2 or done to stop: done
+
+Menu:
+1.Add tasks to a day
+2.Display all tasks
+3.Exit
+Enter your choice: 1
+Enter day name: tuesday
+more 3 task can be added
+Enter task 1 or done to stop: sampletue
+Enter task 2 or done to stop: done
+
+Menu:
+1.Add tasks to a day
+2.Display all tasks
+3.Exit
+Enter your choice: 1
+Enter day name: thursday
+more 3 task can be added
+Enter task 1 or done to stop: samplethurs
+Enter task 2 or done to stop: sample2thurs
+Enter task 3 or done to stop: sample3thurs
+
+Menu:
+1.Add tasks to a day
+2.Display all tasks
+3.Exit
+Enter your choice: 2
+
+--- Weekly Tasks ---
+Monday:
+  - sample task
+  - second sample
+Tuesday:
+  - sampletue
+Wednesday:
+  - sample wed
+Thursday:
+  - samplethurs
+  - sample2thurs
+  - sample3thurs
+Friday:
+  No tasks
+Saturday:
+  No tasks
+Sunday:
+  No tasks
+
+Menu:
+1.Add tasks to a day
+2.Display all tasks
+3.Exit
+Enter your choice: 1
+Enter day name: friday
+more 3 task can be added
+Enter task 1 or done to stop: samplefri
+Enter task 2 or done to stop: sampl2fri
+Enter task 3 or done to stop: sampl3fri
+
+Menu:
+1.Add tasks to a day
+2.Display all tasks
+3.Exit
+Enter your choice: 1
+Enter day name: saturday
+more 3 task can be added
+Enter task 1 or done to stop: nonetask
+Enter task 2 or done to stop: done
+
+Menu:
+1.Add tasks to a day
+2.Display all tasks
+3.Exit
+Enter your choice: sunday
+Enter day name: more 3 task can be added
+Enter task 1 or done to stop: samplesun
+Enter task 2 or done to stop: done
+
+Menu:
+1.Add tasks to a day
+2.Display all tasks
+3.Exit
+Enter your choice: 2
+
+--- Weekly Tasks ---
+Monday:
+  - sample task
+  - second sample
+Tuesday:
+  - sampletue
+Wednesday:
+  - sample wed
+Thursday:
+  - samplethurs
+  - sample2thurs
+  - sample3thurs
+Friday:
+  - samplefri
+  - sampl2fri
+  - sampl3fri
+Saturday:
+  - nonetask
+Sunday:
+  - samplesun
+
+Menu:
+1.Add tasks to a day
+2.Display all tasks
+3.Exit
+Enter your choice: 3
+Exiting...

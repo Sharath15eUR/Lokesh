@@ -1,0 +1,9 @@
+PS C:\Users\loges\Documents\Lokesh\advancedC_assignement\mod1_and_mod2> ./q3
+enter the val for n nxn: 4
+1 2 3 4
+11 22 33 44
+111 222 333 444
+1111 2222 3333 4444
+enter the value for key to serh: 1111
+
+Key 1111 presnt
