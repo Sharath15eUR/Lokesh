@@ -1,0 +1,46 @@
+1) CHILD PROCESS (FORK)
+    A child process is a new process created by an existing parent process using the fork() system call .
+    fork() creates a duplicate of the parent process, resulting in two processes running concurrently.
+    It returns 0 in the child process, the child’s PID (positive value) in the parent process, and -1 if the creation fails.
+    The child process inherits a copy of the parent memory and execution context but runs independently.
+    This mechanism enables multitasking by allowing a program to run multiple processes simultaneously.
+    The child process can replace its program image using exec() family calls to run a different program.
+    fork() is fundamental in process management and the basis for creating new processes .
+    pid_t  is type retured by fork() call.
+
+
+2) HANDLING COMMON SIGNAL
+    handling common signals is essential for creating robust and responsive applications. Signals are asynchronous 
+    notifications sent to a process by the operating system to indicate events such as interrupts (SIGINT), termination 
+    requests (SIGTERM), segmentation faults (SIGSEGV), and alarm timeouts (SIGALRM). To manage these signals, developers 
+    can use functions like signal() or the more powerful sigaction(). While signal() provides a simple way to assign a 
+    handler function to a signal, sigaction() offers more control, allowing the programmer to specify which signals should 
+    be blocked during handling and how the signal should be treated. By defining custom signal handlers, 
+    a program can intercept signals and perform specific actions like cleaning up resources or logging messages before exiting, 
+    rather than terminating abruptly. Proper signal handling is especially important in server applications,
+    real-time systems, and any program that must run reliably under various conditions.
+
+
+3)Exploring different kernel crashes
+    when working within the Linux kernel or writing kernel modules various coding mistakes can lead to kernel crashes often referred to as kernel panics.
+    One of the most common causes is dereferencing a null or invalid pointer which in kernel space can immediately crash the system.
+    Similarly accessing memory that hasnt been properly allocated or that has already been freed  can lead to unpredictable behavior and kernel failure. 
+    Division by zero and writing to read-only memory regions are other critical errors that can cause exceptions resulting in a system crash. Stack overflows 
+    often due to deep recursion or large local variables are particularly dangerous in kernel space where the stack size is limited. Improper use of kernel API
+    such as passing null pointers to system functions or not checking return values can also introduce instability. Unlike user-space programs 
+    which are isolated and protected by the operating system kernel space code runs with high privileges and has direct access to hardware and memory
+    making any error is an serious issue.
+
+4)TIME COMPLEXITY
+    Time complexity is a way to describe how the runtime of an algorithm increases with the size of the input. It helps analyze the efficiency of 
+    algorithms by expressing the number of basic operations in terms of input size, usually using Big O notation (e.g O(1), O(n), O(log n), O(n²)).
+    For example, an algorithm with O(n) time complexity grows linearly as the input grows, while one with O(n²) grows much faster. Understanding time 
+    complexity is essential for writing scalable and efficient code
+
+    eg=> for finding sum of first n prime time complexity is (O(n✓n))
+
+5)Locking mechanism
+    Locking is a mechanism used in concurrent programming to prevent multiple threads from accessing shared resources simultaneously, ensuring data consistency.
+    A mutex (mutual exclusion) is a type of lock that blocks a thread if the lock is not available, putting it to sleep until it can acquire the lock—ideal for 
+    long or preemptible critical sections. A spinlock, on the other hand, continuously checks (or "spins") until the lock becomes free, consuming CPU cycles but 
+    avoiding the overhead of context switching—best for short, fast operations where sleeping is not allowed.

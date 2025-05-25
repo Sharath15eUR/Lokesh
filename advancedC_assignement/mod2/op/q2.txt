@@ -1,0 +1,24 @@
+PS C:\Users\loges\Documents\Lokesh\advancedC_assignement\mod2> ./q2
+ent n for prime sum: 5
+
+Thread 1 running (2 s)
+Thread 2 running (3 s)
+Thread 1 running (4 s)
+Thread 2 running (6 s)
+Thread 1 running (6 s)
+sig int : 2 :request raised, terminating gracefully with interupt  after curr task complete
+sum of first 5 prime no is 28
+
+
+PS C:\Users\loges\Documents\Lokesh\advancedC_assignement\mod2> ./q2
+ent n for prime sum: 5
+
+Thread 1 running (2 s)
+Thread 2 running (3 s)
+Thread 1 running (4 s)
+Thread 1 running (6 s)
+Thread 2 running (6 s)
+Thread 1 running (8 s)
+Thread 2 running (9 s)
+Thread 1 running (10 s)
+sum of first 5 prime no is 28
